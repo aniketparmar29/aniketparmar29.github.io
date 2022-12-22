@@ -73,7 +73,7 @@ function Home() {
     <hr />
         <About isDarkMode={isDarkMode}/>
     <hr />
-        <Skills/>
+        <Skills isDarkMode={isDarkMode}/>
     </div>
   )
 }
