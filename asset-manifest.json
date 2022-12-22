@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f8f8faf4.css",
+    "main.js": "/static/js/main.9e669981.js",
+    "static/js/787.3706780e.chunk.js": "/static/js/787.3706780e.chunk.js",
+    "static/media/Aniket-Parmar-Resume.pdf": "/static/media/Aniket-Parmar-Resume.864f9e95424cac4b92f7.pdf",
+    "index.html": "/index.html",
+    "main.f8f8faf4.css.map": "/static/css/main.f8f8faf4.css.map",
+    "main.9e669981.js.map": "/static/js/main.9e669981.js.map",
+    "787.3706780e.chunk.js.map": "/static/js/787.3706780e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f8f8faf4.css",
+    "static/js/main.9e669981.js"
+  ]
+}
