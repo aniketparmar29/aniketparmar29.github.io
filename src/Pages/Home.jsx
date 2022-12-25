@@ -5,6 +5,8 @@ import useDarkMode from '../hooks/useDarkMode'
 import Skills from '../Components/Skills';
 import {TypeAnimation} from 'react-type-animation'
 import {FaGithubSquare,FaGithub,FaLinkedin,FaLinkedinIn,FaFileDownload,FaDownload} from 'react-icons/fa';
+import {RiArrowUpCircleFill,RiArrowUpCircleLine} from 'react-icons/ri'
+import {Link} from 'react-scroll'
 import Resume from '../Download/Aniket-Parmar-Resume.pdf';
 function Home() {
   const [isDarkMode,toggleDarkMode]=useDarkMode();
@@ -20,7 +22,7 @@ function Home() {
   })
   }
   return (
-    <div>
+    <div name="Home">
         <Navbar isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode}/>
         <div style={isDarkMode===true?{backgroundColor:"rgb(8, 16, 28)",color:"white"}:{backgroundColor:"rgb(144, 175, 224)",color:"black"}} id='about' className='max-w-screen md:w-full  mx-auto pt-10 pb-20 md:pt-28 '>
         <div className="max-w-screen md:max-w-screen-lg text-center lg:text-left mx-auto grid lg:grid-cols-2 items-center">
@@ -40,7 +42,7 @@ function Home() {
               cursor={true}
                 repeat={Infinity}
                 // style={{ fontSize: '2rem' }}
-                className={isDarkMode===true?"text-blue-400 xl:text-4xl text-2xl animate-none md:animate-pulse z-0":"text-blue-900 xl:text-4xl text-2xl animate-none md:animate-pulse z-0"}
+                className={isDarkMode===true?"text-blue-400 xl:text-4xl text-2xl animate-none md:animate-pulse ":"text-blue-900 xl:text-4xl text-2xl animate-none md:animate-pulse z-0"}
             />
               </div>
             <div className='mt-5 flex justify-center  xl:justify-start space-x-8'>
@@ -74,6 +76,9 @@ function Home() {
         <About isDarkMode={isDarkMode}/>
     <hr />
         <Skills isDarkMode={isDarkMode}/>
+    <hr />
+        <button className='fixed z-100 bottom-4 right-2'><Link to='Home' smooth duration={1200}>{isDarkMode && <RiArrowUpCircleFill className='text-blue-400 hover:text-blue-500' size={50}/>}
+              {!isDarkMode && <RiArrowUpCircleLine className='text-blue-800 hover:text-blue-900'size={50}/>}</Link></button>
     </div>
   )
 }
