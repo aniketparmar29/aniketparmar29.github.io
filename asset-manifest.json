@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.f0468ccd.css",
-    "main.js": "/static/js/main.6a816956.js",
+    "main.css": "/static/css/main.fcc07d55.css",
+    "main.js": "/static/js/main.44df16e4.js",
     "static/js/787.d187fba4.chunk.js": "/static/js/787.d187fba4.chunk.js",
     "static/media/Aniket-Parmar-Resume.pdf": "/static/media/Aniket-Parmar-Resume.864f9e95424cac4b92f7.pdf",
     "static/media/redux.png": "/static/media/redux.1b4bb5fceb01b19da59d.png",
@@ -17,12 +17,12 @@
     "static/media/css.png": "/static/media/css.69a82c2d9e45c933a9cb.png",
     "static/media/javascript.png": "/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/index.html",
-    "main.f0468ccd.css.map": "/static/css/main.f0468ccd.css.map",
-    "main.6a816956.js.map": "/static/js/main.6a816956.js.map",
+    "main.fcc07d55.css.map": "/static/css/main.fcc07d55.css.map",
+    "main.44df16e4.js.map": "/static/js/main.44df16e4.js.map",
     "787.d187fba4.chunk.js.map": "/static/js/787.d187fba4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f0468ccd.css",
-    "static/js/main.6a816956.js"
+    "static/css/main.fcc07d55.css",
+    "static/js/main.44df16e4.js"
   ]
 }
