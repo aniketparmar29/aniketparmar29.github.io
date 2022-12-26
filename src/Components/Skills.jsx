@@ -8,13 +8,11 @@ import typescript from "../assets/typescript.png";
 import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
 import redux from "../assets/redux.png";
-import jest from "../assets/jest.png";
-import postman from "../assets/postman.png";
 import node from "../assets/node.png";
 import mongodb from "../assets/mongodb.png";
 import express from "../assets/express.png";
-import npm from "../assets/npm.png";
 import chakra from "../assets/chakra.png";
+import GithubCal from "./GithubCal";
 const Skills = ({isDarkMode}) => {
   const techs = [
     {
@@ -95,7 +93,7 @@ const Skills = ({isDarkMode}) => {
           </p>
         </div>
 
-        <div className="w-full grid grid-cols-2 mt-8 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0"  >
+        <div className="w-full grid grid-cols-2 mt-8 sm:grid-cols-3 lg:grid-cols-4 gap-8 text-center py-8 "  >
           {techs.map(({ id, src, title }) => (
             <div
               key={id}

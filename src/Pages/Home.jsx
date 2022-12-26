@@ -3,6 +3,7 @@ import Navbar from '../Components/Navbar'
 import About from '../Components/About'
 import useDarkMode from '../hooks/useDarkMode'
 import Skills from '../Components/Skills';
+import GithubCal from '../Components/GithubCal';
 import {TypeAnimation} from 'react-type-animation'
 import {FaGithubSquare,FaGithub,FaLinkedin,FaLinkedinIn,FaFileDownload,FaDownload} from 'react-icons/fa';
 import {RiArrowUpCircleFill,RiArrowUpCircleLine} from 'react-icons/ri'
@@ -77,6 +78,7 @@ function Home() {
     <hr />
         <Skills isDarkMode={isDarkMode}/>
     <hr />
+      <GithubCal isDarkMode={isDarkMode}/>
         <button className='fixed z-100 bottom-4 right-2'><Link to='Home' smooth duration={1200}>{isDarkMode && <RiArrowUpCircleFill className='text-blue-400 hover:text-blue-500' size={50}/>}
               {!isDarkMode && <RiArrowUpCircleLine className='text-blue-800 hover:text-blue-900'size={50}/>}</Link></button>
     </div>
