@@ -2,7 +2,19 @@ import React from 'react'
 import { useEffect } from 'react';
 import { FaMoon,FaSun } from "react-icons/fa";
 import { Link } from 'react-scroll';
+import Resume from '../Download/Aniket-Parmar-Resume.pdf';
 function Navbar({isDarkMode,toggleDarkMode}) {
+    const handleDownload = () => {
+        fetch(Resume).then(response => {
+          response.blob().then(blob => {
+              const fileURL = window.URL.createObjectURL(blob);
+              let alink = document.createElement('a');
+              alink.href = fileURL;
+              alink.download = "Aniket-Parmar-Resume.pdf";
+              alink.click();
+          })
+      })
+      }
    const ophamburger = () =>{
        let hamburger = window.document.querySelector(".hamburger");
        hamburger.classList="hidden hamburger border p-2 xl:hidden md:hidden sm:hidden  ";
@@ -47,6 +59,7 @@ function Navbar({isDarkMode,toggleDarkMode}) {
                 <li className='hover:underline hover:text-blue-900 hover:underline-offset-8 cursor-pointer'><Link to="Skills" smooth duration={1500}>Skills</Link></li>
                 <li className='hover:underline hover:text-blue-900 hover:underline-offset-8 cursor-pointer'><Link to="Projects" smooth duration={1500}>Projects</Link></li>
                 <li className='hover:underline hover:text-blue-900 hover:underline-offset-8 cursor-pointer'><Link to="Contacts" smooth duration={1500}>Contacts</Link></li>
+                <li  onClick={handleDownload} className='hover:underline hover:text-blue-900 hover:underline-offset-8 cursor-pointer'><a href="https://drive.google.com/file/d/1LbPArwTFWUcw_OZZNMw0JCojAp1GcFa7/view?usp=share_link" rel='noreferrer' target={"_blank"}>Resume</a></li>
                 {!isDarkMode && <FaMoon size={25} onClick={toggleDarkMode} className='mt-1 cursor-pointer'/>}
                 {isDarkMode && <FaSun size={25} onClick={toggleDarkMode} className='mt-1 cursor-pointer text-orange-500 '/>}
             </ul>
@@ -57,11 +70,13 @@ function Navbar({isDarkMode,toggleDarkMode}) {
             <ul style={isDarkMode===true?{backgroundColor:"rgb(8, 16, 28)",color:"white"}:{backgroundColor:"rgb(144, 175, 224)",color:"black"}}  className=" hidden  menuiji px-2 py-4 space-x-11 justify-end  xl:hidden   md:hidden">
                 {!isDarkMode && <FaMoon size={50} onClick={toggleDarkMode} className='mt-1 ml-11 menui12 cursor-pointer'/>}
                 {isDarkMode && <FaSun size={50} onClick={toggleDarkMode} className='mt-1 ml-11 menui12 text-orange-500 cursor-pointer'/>}
-                <li className='cursor-pointer'><Link onClick={closehamburger} to="Home" smooth duration={1500}>Home</Link></li>
-                <li className='cursor-pointer'><Link onClick={closehamburger} to="About" smooth duration={1500}>About</Link></li>
-                <li className='cursor-pointer'><Link onClick={closehamburger} to="Skills" smooth duration={1500}>Skills</Link></li>
-                <li className='cursor-pointer'><Link onClick={closehamburger} to="Projects" smooth duration={1500}>Projects</Link></li>
-                <li className='cursor-pointer'><Link onClick={closehamburger} to='Contact' smooth duration={1500} >Contact</Link></li>
+                <li className='hover:underline hover:text-blue-900 hover:underline-offset-8 cursor-pointer'><Link onClick={closehamburger} to="Home" smooth duration={1500}>Home</Link></li>
+                <li className='hover:underline hover:text-blue-900 hover:underline-offset-8 cursor-pointer'><Link onClick={closehamburger} to="About" smooth duration={1500}>About</Link></li>
+                <li className='hover:underline hover:text-blue-900 hover:underline-offset-8 cursor-pointer'><Link onClick={closehamburger} to="Skills" smooth duration={1500}>Skills</Link></li>
+                <li className='hover:underline hover:text-blue-900 hover:underline-offset-8 cursor-pointer'><Link onClick={closehamburger} to="Projects" smooth duration={1500}>Projects</Link></li>
+                <li className='hover:underline hover:text-blue-900 hover:underline-offset-8 cursor-pointer'><Link onClick={closehamburger} to='Contact' smooth duration={1500} >Contact</Link></li>
+                <li onClick={handleDownload} className='hover:underline hover:text-blue-900 hover:underline-offset-8 cursor-pointer'><a href="https://drive.google.com/file/d/1LbPArwTFWUcw_OZZNMw0JCojAp1GcFa7/view?usp=share_link" rel='noreferrer' target={"_blank"}>Resume</a></li>
+
             </ul>
     </div>
   )

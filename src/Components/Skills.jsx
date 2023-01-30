@@ -1,5 +1,5 @@
-import React from "react";
-
+import React,{useEffect} from "react";
+import AOS from "aos";
 import html from "../assets/html.png";
 import css from "../assets/css.png";
 import javascript from "../assets/javascript.png";
@@ -12,8 +12,10 @@ import node from "../assets/node.png";
 import mongodb from "../assets/mongodb.png";
 import express from "../assets/express.png";
 import chakra from "../assets/chakra.png";
-import GithubCal from "./GithubCal";
 const Skills = ({isDarkMode}) => {
+  useEffect(()=>{
+    AOS.init({delay:200});
+},[])
   const techs = [
     {
       id: 1,
@@ -87,13 +89,13 @@ const Skills = ({isDarkMode}) => {
       style={isDarkMode===true?{backgroundColor:"rgb(8, 16, 28)",color:"white"}:{backgroundColor:"rgb(144, 175, 224)",color:"black"}}
     >
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white" >
-        <div >
+        <div data-aos="fade-right">
           <p className="text-5xl text-center hover:underline hover:text-blue-900 hover:underline-offset-8" >
             Skills
           </p>
         </div>
 
-        <div className="w-full grid grid-cols-2 mt-8 sm:grid-cols-3 lg:grid-cols-4 gap-8 text-center py-8 "  >
+        <div className="w-full grid grid-cols-2 mt-8 sm:grid-cols-3 lg:grid-cols-4 gap-8 text-center py-8 " data-aos="fade-up"  >
           {techs.map(({ id, src, title }) => (
             <div
               key={id}

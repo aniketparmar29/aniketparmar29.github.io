@@ -9,7 +9,10 @@ import {FaGithubSquare,FaGithub,FaLinkedin,FaLinkedinIn,FaFileDownload,FaDownloa
 import {RiArrowUpCircleFill,RiArrowUpCircleLine} from 'react-icons/ri'
 import {Link} from 'react-scroll'
 import Resume from '../Download/Aniket-Parmar-Resume.pdf';
+import Contact from '../Components/Contact';
+import Project from '../Components/Project';
 function Home() {
+
   const [isDarkMode,toggleDarkMode]=useDarkMode();
   const handleDownload = () => {
     fetch(Resume).then(response => {
@@ -59,6 +62,7 @@ function Home() {
               {!isDarkMode && <FaLinkedinIn size={50}/>}
                 </a>
               </button>
+              <a href="https://drive.google.com/file/d/1LbPArwTFWUcw_OZZNMw0JCojAp1GcFa7/view?usp=share_link" rel='noreferrer' target={"_blank"}>
               <button onClick={handleDownload} className='flex-col mt-2 justify-center items-center'>
                 <div>
               {isDarkMode && <FaFileDownload size={50}/>}
@@ -66,10 +70,11 @@ function Home() {
                 </div>
                 <p className={isDarkMode===true?'-ml-[0.15rem]':'-ml-[0.4rem]'}>Resume</p>
               </button>
+              </a>
             </div>
             </div>
             <div>
-                <img className='mx-auto rounded-2xl shadow-xl shadow-blue-900/100 w-8/12 object-cover object-center md:w-8/12  lg:w-7/12' src="https://avatars.githubusercontent.com/u/80318654?v=4" alt="Aniket Parmar" />
+                <img className='mx-auto rounded-2xl shadow-xl shadow-blue-900/100 w-8/12  object-cover object-center md:w-8/12  lg:w-7/12' src="https://avatars.githubusercontent.com/u/80318654?v=4" alt="Aniket Parmar" />
             </div>
         </div>
     </div>
@@ -79,6 +84,14 @@ function Home() {
         <Skills isDarkMode={isDarkMode}/>
     <hr />
       <GithubCal isDarkMode={isDarkMode}/>
+    <hr/>
+    <div style={isDarkMode===true?{backgroundColor:"rgb(8, 16, 28)",color:"white"}:{backgroundColor:"rgb(144, 175, 224)",color:"black"}} className=" xl:flex 2xl:flex lg:flex gap-20 justify-between">
+    
+      <Project isDarkMode={isDarkMode}/>
+
+  </div>
+    <hr />
+      <Contact isDarkMode={isDarkMode}/>
         <button className='fixed z-100 bottom-4 right-2'><Link to='Home' smooth duration={1200}>{isDarkMode && <RiArrowUpCircleFill className='text-blue-400 hover:text-blue-500' size={50}/>}
               {!isDarkMode && <RiArrowUpCircleLine className='text-blue-800 hover:text-blue-900'size={50}/>}</Link></button>
     </div>
