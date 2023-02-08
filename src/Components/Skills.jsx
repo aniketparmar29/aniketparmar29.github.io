@@ -86,20 +86,21 @@ const Skills = ({isDarkMode}) => {
     <div
       name="Skills"
       className="w-full pt-2 md:pt-28 z-0 hover:z-0 "
-      style={isDarkMode===true?{backgroundColor:"rgb(8, 16, 28)",color:"white"}:{backgroundColor:"rgb(144, 175, 224)",color:"black"}}
+      style={isDarkMode===true?{backgroundColor:"teal",color:"white"}:{backgroundColor:"cyan",color:"black"}}
     >
-      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white" >
+      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full " >
         <div data-aos="fade-right">
           <p className="text-5xl text-center hover:underline hover:text-blue-900 hover:underline-offset-8" >
             Skills
           </p>
         </div>
 
-        <div className="w-full grid grid-cols-2 mt-8 sm:grid-cols-3 lg:grid-cols-4 gap-8 text-center py-8 " data-aos="fade-up"  >
+        <div  className="w-full grid grid-cols-2 mt-8 sm:grid-cols-3 lg:grid-cols-4 gap-8 text-center py-8 " data-aos="fade-up"  >
           {techs.map(({ id, src, title }) => (
             <div
+            style={isDarkMode===true?{backgroundColor:"#ff74",color:"white"}:{backgroundColor:"#2ad56f",color:"black"}}
               key={id}
-              className={`shadow-lg  duration-300 py-2 rounded-lg  ${isDarkMode===true?"shadow-blue-400":"shadow-blue-900"} hover:scale-110` }  
+              className={`shadow-lg  duration-300 py-2 rounded-lg  ${isDarkMode===true?"shadow-cyan-400":"shadow-teal-900"} hover:scale-110` }  
             >
               <img src={src} alt="" className="w-20 mx-auto" />
               <p className="mt-4">{title}</p>

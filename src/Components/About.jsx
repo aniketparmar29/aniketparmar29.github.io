@@ -8,11 +8,11 @@ function About({isDarkMode}) {
 },[])
 
   return (
-    <div style={isDarkMode===true?{backgroundColor:"rgb(8, 16, 28)",color:"white"}:{backgroundColor:"rgb(144, 175, 224)",color:"black"}} id='about' name="About" className='max-w-screen md:w-full  mx-auto pt-10 pb-20 md:pt-28 '>
+    <div style={isDarkMode===true?{backgroundColor:"teal",color:"white"}:{backgroundColor:"cyan",color:"black"}} id='about' name="About" className='max-w-screen md:w-full  mx-auto pt-10 pb-20 md:pt-28 '>
     <h1 data-aos="fade-down" className='text-5xl text-center hover:underline hover:text-blue-900 hover:underline-offset-8'>About</h1>
     <div className='max-w-screen md:max-w-screen-lg  mx-auto grid lg:grid-cols-2 items-center'>
       <div data-aos="fade-right" className="px-8 py-12 max-w-lg mx-auto sm:max-w-xl lg:px-12 lg:py-24 lg:max-w-full">
-    <p>Enthusiast web developer, team player, Problem Solver Hard working
+    <p className='text-2xl'>Enthusiast web developer, team player, Problem Solver Hard working
             With 1000+ Hour Of Coding,100+Hour Data Structure And Algorithm, developed Clones of well Knows
             web experience Creating Projects.</p>
       </div>
