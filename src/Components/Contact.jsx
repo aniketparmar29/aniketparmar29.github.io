@@ -24,7 +24,7 @@ const Contact = ({isDarkMode}) => {
       <p data-aos="fade-right" className="text-5xl text-center mb-10 hover:underline hover:text-blue-900 hover:underline-offset-8" >
             Contact
           </p>
-  <form ref={form} data-aos="fade-down" class=" p-6 flex-col justify-center items-center w-[400px]  border-4 m-auto rounded-lg shadow-md" onSubmit={sendEmail}>
+  <form ref={form} data-aos="fade-down" class=" p-6 flex-col justify-center items-center w-[70%]  border-4 m-auto rounded-lg shadow-md" onSubmit={sendEmail}>
     <div class="mb-4">
       <label class="block text-gray-700 font-medium mb-2" for="user_name">
         Name
