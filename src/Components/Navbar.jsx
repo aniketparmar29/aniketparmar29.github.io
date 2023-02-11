@@ -58,7 +58,7 @@ function Navbar({isDarkMode,toggleDarkMode}) {
                 <li className='hover:underline hover:text-blue-900 hover:underline-offset-8 cursor-pointer'><Link to="About" smooth duration={1500}>About</Link></li>
                 <li className='hover:underline hover:text-blue-900 hover:underline-offset-8 cursor-pointer'><Link to="Skills" smooth duration={1500}>Skills</Link></li>
                 <li className='hover:underline hover:text-blue-900 hover:underline-offset-8 cursor-pointer'><Link to="Projects" smooth duration={1500}>Projects</Link></li>
-                <li className='hover:underline hover:text-blue-900 hover:underline-offset-8 cursor-pointer'><Link to="Contacts" smooth duration={1500}>Contacts</Link></li>
+                <li className='hover:underline hover:text-blue-900 hover:underline-offset-8 cursor-pointer'><Link to="Contact" smooth duration={1500}>Contacts</Link></li>
                 <li  onClick={handleDownload} className='hover:underline hover:text-blue-900 hover:underline-offset-8 cursor-pointer'><a href="https://drive.google.com/file/d/1LbPArwTFWUcw_OZZNMw0JCojAp1GcFa7/view?usp=share_link" rel='noreferrer' target={"_blank"}>Resume</a></li>
                 {!isDarkMode && <FaMoon size={25} onClick={toggleDarkMode} className='mt-1 cursor-pointer'/>}
                 {isDarkMode && <FaSun size={25} onClick={toggleDarkMode} className='mt-1 cursor-pointer text-orange-500 '/>}
