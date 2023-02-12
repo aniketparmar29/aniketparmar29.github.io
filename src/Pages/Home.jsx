@@ -28,7 +28,7 @@ function Home() {
   return (
     <div name="Home">
         <Navbar isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode}/>
-        <div style={isDarkMode===true?{backgroundColor:"teal",color:"white"}:{backgroundColor:"cyan",color:"black"}} id='about' className='max-w-screen md:w-full  mx-auto pt-10 pb-20 md:pt-28 '>
+        <div style={isDarkMode===true?{background:"#000006",color:"white"}:{backgroundColor:"#00BFFF",color:"black"}} id='about' className='max-w-screen md:w-full  mx-auto pt-10 pb-20 md:pt-28 '>
         <div className="max-w-screen md:max-w-screen-lg text-center lg:text-left mx-auto grid lg:grid-cols-2 items-center">
             <div className="px-8 py-12 max-w-lg  sm:max-w-xl lg:px-12 lg:py-24 lg:max-w-full">
               <div>

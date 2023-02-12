@@ -92,14 +92,14 @@ const MycodingAi =[
 ]
 let style_md = "mt-6 rounded-lg duration-200  h-52   md:h-60  sm:max-w-screen-lg sm:object-cover object-center lg:hidden ";
   return (
-    <div style={isDarkMode===true?{backgroundColor:"teal",color:"white"}:{backgroundColor:"cyan",color:"black"}} className=" m-auto  z-1  w-[100%] pb-5"  name="Projects">
+    <div style={isDarkMode===true?{background:"#000006",color:"white"}:{backgroundColor:"#00BFFF",color:"black"}} className=" m-auto  z-1  w-[100%] pb-5"  name="Projects">
       <div data-aos="fade-right">
           <p className="text-5xl text-center hover:underline hover:text-blue-900 hover:underline-offset-8" >
             Projects
           </p>
         </div>
 
-        <div style={isDarkMode===true?{backgroundColor:"#ff74",color:"white"}:{backgroundColor:"#2ad56f",color:"black"}} className="max-w-screen-lg z-1  mx-auto px-2 shadow-xl shadow-gray-600 mt-0 md:mt-10  ">
+        <div style={isDarkMode===true?{backgroundColor:"#ff7474",color:"white"}:{backgroundColor:"#2ad56f",color:"black"}} className="max-w-screen-lg z-1  mx-auto px-2 shadow-xl shadow-gray-600 mt-0 md:mt-10  ">
         <div className="max-w-screen-lg z-1 mx-auto grid lg:grid-cols-2  "> 
         <div className='px-10 py-12 z-1 max-w-md mx-auto sm:max-w-xl lg:px-10 lg:py-6 lg:max-w-full'>
           <div className="block lg:hidden" data-aos="fade-up">
@@ -137,7 +137,7 @@ let style_md = "mt-6 rounded-lg duration-200  h-52   md:h-60  sm:max-w-screen-lg
       </div>
       </div>
       {/* skin store project */}
-        <div style={isDarkMode===true?{backgroundColor:"#ff74",color:"white"}:{backgroundColor:"#2ad56f",color:"black"}} className="max-w-screen-lg  mx-auto px-2 shadow-xl shadow-gray-600 mt-10  ">
+        <div style={isDarkMode===true?{backgroundColor:"#ff7474",color:"white"}:{backgroundColor:"#2ad56f",color:"black"}} className="max-w-screen-lg  mx-auto px-2 shadow-xl shadow-gray-600 mt-10  ">
         <div className="max-w-screen-lg mx-auto grid lg:grid-cols-2  "> 
         <div className='px-10 py-12 max-w-md mx-auto sm:max-w-xl lg:px-10 lg:py-6 lg:max-w-full'>
           <div className="block lg:hidden">
@@ -175,7 +175,7 @@ let style_md = "mt-6 rounded-lg duration-200  h-52   md:h-60  sm:max-w-screen-lg
       </div>
       </div>
       {/* my coding ai project */}
-        <div style={isDarkMode===true?{backgroundColor:"#ff74",color:"white"}:{backgroundColor:"#2ad56f",color:"black"}} className="max-w-screen-lg  mx-auto px-2 shadow-xl shadow-gray-600 mt-10  ">
+        <div style={isDarkMode===true?{backgroundColor:"#ff7474",color:"white"}:{backgroundColor:"#2ad56f",color:"black"}} className="max-w-screen-lg  mx-auto px-2 shadow-xl shadow-gray-600 mt-10  ">
         <div className="max-w-screen-lg mx-auto grid lg:grid-cols-2  "> 
         <div className='px-10 py-12 max-w-md mx-auto sm:max-w-xl lg:px-10 lg:py-6 lg:max-w-full'>
           <div className="block lg:hidden">
@@ -216,7 +216,7 @@ let style_md = "mt-6 rounded-lg duration-200  h-52   md:h-60  sm:max-w-screen-lg
       </div>
       </div>
       {/* tatacliq  */}
-      <div style={isDarkMode===true?{backgroundColor:"#ff74",color:"white"}:{backgroundColor:"#2ad56f",color:"black"}} className="max-w-screen-lg  mx-auto px-2 shadow-xl shadow-gray-600 mt-10  ">
+      <div style={isDarkMode===true?{backgroundColor:"#ff7474",color:"white"}:{backgroundColor:"#2ad56f",color:"black"}} className="max-w-screen-lg  mx-auto px-2 shadow-xl shadow-gray-600 mt-10  ">
         <div className="max-w-screen-lg mx-auto grid lg:grid-cols-2  "> 
         <div className='px-10 py-12 max-w-md mx-auto sm:max-w-xl lg:px-10 lg:py-6 lg:max-w-full'>
           <div className="block lg:hidden">
