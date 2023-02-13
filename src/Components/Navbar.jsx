@@ -40,7 +40,7 @@ function Navbar({isDarkMode,toggleDarkMode}) {
     },[isDarkMode])
   return (
     <div name="Navbar" className='lg:sticky md:sticky xl:sticky sticky  top-0 z-50'>
-        <nav className=' navbarj flex  justify-between  border-b-2  border-slate-900 ' style={isDarkMode===true?{background:"#000006",color:"white"}:{backgroundColor:"#00BFFF",color:"black"}} >
+        <nav className=' navbarj flex  justify-between  border-b-2  border-slate-900 ' style={isDarkMode===true?{background:"#000006",color:"white"}:{backgroundColor:"#2874F0",color:"black"}} >
             <div className='flex xl:w-[130px] w-[100%] justify-between'>
             <Link to="Home" smooth duration={1500}><img className='xl:h-[100%] h-[50%]' src={isDarkMode===true?"https://pbs.twimg.com/media/FkbPnfGWYAEEgJI?format=png&name=360x360":"https://pbs.twimg.com/media/FkbPW5IX0AgIVlj?format=png&name=360x360"} alt="logo" /></Link>
             <div>
@@ -53,13 +53,13 @@ function Navbar({isDarkMode,toggleDarkMode}) {
             </div>
 
             </div>
-            <ul style={isDarkMode===true?{background:"#000006",color:"white"}:{backgroundColor:"#00BFFF",color:"black"}} className='hidden menui px-2 py-4 space-x-11 justify-end sm:flex  xl:flex 2xl:flex  md:flex'>
-                <li className='hover:underline hover:text-blue-900 hover:underline-offset-8 menui1 cursor-pointer'><Link to="Home" smooth duration={1500}>Home</Link></li>
-                <li className='hover:underline hover:text-blue-900 hover:underline-offset-8 cursor-pointer'><Link to="About" smooth duration={1500}>About</Link></li>
-                <li className='hover:underline hover:text-blue-900 hover:underline-offset-8 cursor-pointer'><Link to="Skills" smooth duration={1500}>Skills</Link></li>
-                <li className='hover:underline hover:text-blue-900 hover:underline-offset-8 cursor-pointer'><Link to="Projects" smooth duration={1500}>Projects</Link></li>
-                <li className='hover:underline hover:text-blue-900 hover:underline-offset-8 cursor-pointer'><Link to="Contact" smooth duration={1500}>Contacts</Link></li>
-                <li  onClick={handleDownload} className='hover:underline hover:text-blue-900 hover:underline-offset-8 cursor-pointer'><a href="https://drive.google.com/file/d/1LbPArwTFWUcw_OZZNMw0JCojAp1GcFa7/view?usp=share_link" rel='noreferrer' target={"_blank"}>Resume</a></li>
+            <ul style={isDarkMode===true?{background:"#000006",color:"white"}:{backgroundColor:"#2874F0",color:"black"}} className='hidden menui px-2 py-4 space-x-11 justify-end sm:flex  xl:flex 2xl:flex  md:flex'>
+                <li className='hover:underline hover:text-white hover:underline-offset-8 menui1 cursor-pointer'><Link to="Home" smooth duration={1500}>Home</Link></li>
+                <li className='hover:underline hover:text-white hover:underline-offset-8 cursor-pointer'><Link to="About" smooth duration={1500}>About</Link></li>
+                <li className='hover:underline hover:text-white hover:underline-offset-8 cursor-pointer'><Link to="Skills" smooth duration={1500}>Skills</Link></li>
+                <li className='hover:underline hover:text-white hover:underline-offset-8 cursor-pointer'><Link to="Projects" smooth duration={1500}>Projects</Link></li>
+                <li className='hover:underline hover:text-white hover:underline-offset-8 cursor-pointer'><Link to="Contact" smooth duration={1500}>Contacts</Link></li>
+                <li  onClick={handleDownload} className='hover:underline hover:text-white hover:underline-offset-8 cursor-pointer'><a href="https://drive.google.com/file/d/1LbPArwTFWUcw_OZZNMw0JCojAp1GcFa7/view?usp=share_link" rel='noreferrer' target={"_blank"}>Resume</a></li>
                 {!isDarkMode && <FaMoon size={25} onClick={toggleDarkMode} className='mt-1 cursor-pointer'/>}
                 {isDarkMode && <FaSun size={25} onClick={toggleDarkMode} className='mt-1 cursor-pointer text-orange-500 '/>}
             </ul>
@@ -67,15 +67,15 @@ function Navbar({isDarkMode,toggleDarkMode}) {
 
 
         </nav>
-            <ul style={isDarkMode===true?{background:"#000006",color:"white"}:{backgroundColor:"#00BFFF",color:"black"}}  className=" hidden  menuiji px-2 py-4 space-x-11 justify-end  xl:hidden   md:hidden">
+            <ul style={isDarkMode===true?{background:"#000006",color:"white"}:{backgroundColor:"#2874F0",color:"black"}}  className=" hidden  menuiji px-2 py-4 space-x-11 justify-end  xl:hidden   md:hidden">
                 {!isDarkMode && <FaMoon size={50} onClick={toggleDarkMode} className='mt-1 ml-11 menui12 cursor-pointer'/>}
                 {isDarkMode && <FaSun size={50} onClick={toggleDarkMode} className='mt-1 ml-11 menui12 text-orange-500 cursor-pointer'/>}
-                <li className='hover:underline hover:text-blue-900 hover:underline-offset-8 cursor-pointer'><Link onClick={closehamburger} to="Home" smooth duration={1500}>Home</Link></li>
-                <li className='hover:underline hover:text-blue-900 hover:underline-offset-8 cursor-pointer'><Link onClick={closehamburger} to="About" smooth duration={1500}>About</Link></li>
-                <li className='hover:underline hover:text-blue-900 hover:underline-offset-8 cursor-pointer'><Link onClick={closehamburger} to="Skills" smooth duration={1500}>Skills</Link></li>
-                <li className='hover:underline hover:text-blue-900 hover:underline-offset-8 cursor-pointer'><Link onClick={closehamburger} to="Projects" smooth duration={1500}>Projects</Link></li>
-                <li className='hover:underline hover:text-blue-900 hover:underline-offset-8 cursor-pointer'><Link onClick={closehamburger} to='Contact' smooth duration={1500} >Contact</Link></li>
-                <li onClick={handleDownload} className='hover:underline hover:text-blue-900 hover:underline-offset-8 cursor-pointer'><a href="https://drive.google.com/file/d/1LbPArwTFWUcw_OZZNMw0JCojAp1GcFa7/view?usp=share_link" rel='noreferrer' target={"_blank"}>Resume</a></li>
+                <li className='hover:underline hover:text-white hover:underline-offset-8 cursor-pointer'><Link onClick={closehamburger} to="Home" smooth duration={1500}>Home</Link></li>
+                <li className='hover:underline hover:text-white hover:underline-offset-8 cursor-pointer'><Link onClick={closehamburger} to="About" smooth duration={1500}>About</Link></li>
+                <li className='hover:underline hover:text-white hover:underline-offset-8 cursor-pointer'><Link onClick={closehamburger} to="Skills" smooth duration={1500}>Skills</Link></li>
+                <li className='hover:underline hover:text-white hover:underline-offset-8 cursor-pointer'><Link onClick={closehamburger} to="Projects" smooth duration={1500}>Projects</Link></li>
+                <li className='hover:underline hover:text-white hover:underline-offset-8 cursor-pointer'><Link onClick={closehamburger} to='Contact' smooth duration={1500} >Contact</Link></li>
+                <li onClick={handleDownload} className='hover:underline hover:text-white hover:underline-offset-8 cursor-pointer'><a href="https://drive.google.com/file/d/1LbPArwTFWUcw_OZZNMw0JCojAp1GcFa7/view?usp=share_link" rel='noreferrer' target={"_blank"}>Resume</a></li>
 
             </ul>
     </div>

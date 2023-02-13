@@ -86,7 +86,7 @@ const Skills = ({isDarkMode}) => {
     <div
       name="Skills"
       className="w-full pt-2 md:pt-28 z-0 hover:z-0 "
-      style={isDarkMode===true?{background:"#000006",color:"white"}:{backgroundColor:"#00BFFF",color:"black"}}
+      style={isDarkMode===true?{background:"#000006",color:"white"}:{backgroundColor:"#2874F0",color:"black"}}
     >
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full " >
         <div data-aos="fade-right">
@@ -100,7 +100,7 @@ const Skills = ({isDarkMode}) => {
             <div
             style={isDarkMode===true?{backgroundColor:"#ff7474",color:"white"}:{backgroundColor:"#2ad56f",color:"black"}}
               key={id}
-              className={`shadow-lg  duration-300 py-2 rounded-lg  ${isDarkMode===true?"shadow-cyan-400":"shadow-teal-900"} hover:scale-110` }  
+              className={`shadow-lg  duration-300 py-2 rounded-lg  ${isDarkMode===true?"shadow-cyan-400":"shadow-white"} hover:scale-110` }  
             >
               <img src={src} alt="" className="w-20 mx-auto" />
               <p className="mt-4">{title}</p>

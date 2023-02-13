@@ -7,7 +7,7 @@ function GithubCal({isDarkMode}) {
 },[])
   return (
     <>
-    <div style={isDarkMode===true?{background:"#000006",color:"white"}:{backgroundColor:"#00BFFF",color:"black"}} id='about' name="About" className='max-w-screen md:w-full flex justify-center items-center xl:p-20 p-auto mx-auto pt-10 pb-20 md:pt-28 '>
+    <div style={isDarkMode===true?{background:"#000006",color:"white"}:{backgroundColor:"#2874F0",color:"black"}} id='about' name="About" className='max-w-screen md:w-full flex justify-center items-center xl:p-20 p-auto mx-auto pt-10 pb-20 md:pt-28 '>
         <div>
         <p data-aos="fade-right" className="text-5xl text-center mb-10 hover:underline hover:text-blue-900 hover:underline-offset-8" >
             Github Calender
@@ -16,7 +16,7 @@ function GithubCal({isDarkMode}) {
     username="aniketparmar29"
     blockSize={15}
     blockMargin={5}
-    color={isDarkMode===true? "#90AFE0" : "#ff7474"}
+    color={isDarkMode===true? "#ff7474" : "#2ad56f"}
     fontSize={15}
     data-aos="fade-up"
 ></GitHubCalendar>
