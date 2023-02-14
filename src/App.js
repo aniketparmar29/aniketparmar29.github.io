@@ -4,7 +4,7 @@ import './App.css';
 import Home from './Pages/Home';
 import LoadingPage from './Pages/LoadingPage';
 function App() {
-  const {ready} = useLoading(3000);
+  const {ready} = useLoading(4000);
   return (
     <>
     <Routes>

@@ -24,36 +24,38 @@ const Contact = ({isDarkMode}) => {
     AOS.init({delay:200});
   },[])
   return (
-    <div name="Contact" className='pb-10 contact' style={isDarkMode===true?{background:"#000006",color:"white"}:{backgroundColor:"#2874F0",color:"black"}}>
-      <p data-aos="fade-right" className="text-5xl text-center pt-10 mb-10 hover:underline hover:text-blue-900 hover:underline-offset-8" >
-            Contact
-          </p>
-    <div className='max-w-screen md:max-w-screen-lg gap-4 mx-auto grid lg:grid-cols-2 items-center'>
-
-  <div data-aos="fade-left" className={`mt-5  p-6 flex-col h-[33rem] mb-5 justify-between items-center  ${isDarkMode===true?"border-white shadow-cyan-400":"border-blue-900 shadow-white"} border-2  rounded-lg shadow-lg`}>
-    <div className={`  p-6 flex-col font-extrabold justify-between  items-center  ${isDarkMode===true?"border-white shadow-red-400":"border-blue-900 shadow-white"} border-2  rounded-lg shadow-lg`}>
-      <div className='flex'>
-    {!isDarkMode && <BsTelephone size={50}  className='mt-1  menui12 cursor-pointer'/>}
-          {isDarkMode && <FaPhoneSquareAlt size={50}  className='mt-1  menui12 cursor-pointer text-blue-600'/>}
-          <p className='text-xl ml-5 mt-3'>Phone:</p></div>
-      <h3 className='text-xl mt-3'>+918160665677</h3>
+    <div name="Contact" className={`pb-10 contact ${isDarkMode ? "bg-black text-white" : "bg-blue-500 text-black"}`}>
+  <p data-aos="fade-right" className="text-5xl text-center pt-10 mb-10 hover:underline hover:text-blue-900 hover:underline-offset-8">
+    Contact
+  </p>
+  <div className="max-w-screen-md gap-4 mx-auto grid md:grid-cols-2 items-center">
+    <div data-aos="fade-right" className={`mt-5 p-6 w-[80%] lg:w-[100%] m-auto flex-col mb-5 justify-between items-center border-2 rounded-lg shadow-lg ${isDarkMode ? "border-white shadow-cyan-400" : "border-blue-900 shadow-white"}`}>
+      <div className={`p-6 flex-col font-extrabold justify-between items-center border-2 rounded-lg shadow-lg ${isDarkMode ? "border-white shadow-red-400" : "border-blue-900 shadow-white"}`}>
+        <div className="flex">
+          {!isDarkMode && <BsTelephone size={50} className="mt-1 menui12 cursor-pointer" />}
+          {isDarkMode && <FaPhoneSquareAlt size={50} className="mt-1 menui12 cursor-pointer text-blue-600" />}
+          <p className="text-xl ml-5 mt-3">Phone:</p>
+        </div>
+        <h3 className="text-xl mt-3">+918160665677</h3>
       </div>
-    <div className={`  p-6 flex-col font-extrabold justify-between mt-5 items-center  ${isDarkMode===true?"border-white shadow-green-400":"border-blue-900 shadow-white"} border-2  rounded-lg shadow-lg`}>
-      <div className='flex'>
-    {!isDarkMode && <MdOutlineEmail size={50}  className='mt-1  menui12 cursor-pointer'/>}
-          {isDarkMode && <MdEmail size={50}  className='mt-1  menui12 cursor-pointer text-blue-600'/>}
-          <p className='text-xl ml-5 mt-4'>Mail:</p></div>
-      <h3 className='text-xl mt-3'>aniketparmar068@gmail.com</h3>
+      <div className={`p-6 flex-col font-extrabold justify-between mt-5 items-center border-2 rounded-lg shadow-lg ${isDarkMode ? "border-white shadow-green-400" : "border-blue-900 shadow-white"}`}>
+        <div className="flex">
+          {!isDarkMode && <MdOutlineEmail size={50} className="mt-1 menui12 cursor-pointer" />}
+          {isDarkMode && <MdEmail size={50} className="mt-1 menui12 cursor-pointer text-blue-600" />}
+          <p className="text-xl ml-5 mt-4">Mail:</p>
+        </div>
+        <h3 className="text-sm lg:text-xl mt-3">aniketparmar068@gmail.com</h3>
       </div>
-    <div className={`  p-6 flex-col font-extrabold justify-between mt-5 items-center  ${isDarkMode===true?"border-white shadow-blue-400":"border-blue-900 shadow-white"} border-2  rounded-lg shadow-lg`}>
-      <div className="flex">
-    {!isDarkMode && <HiOutlineLocationMarker size={50}  className='mt-1  menui12 cursor-pointer'/>}
-          {isDarkMode && <HiLocationMarker size={50}  className='mt-1  menui12 cursor-pointer text-blue-600'/>}
-          <p className='text-xl ml-5 mt-4'>Address:</p></div>
-      <h3 className='text-xl mt-3'>Lathidad,Gujarat</h3>
+      <div className={`p-6 flex-col font-extrabold justify-between mt-5 items-center border-2 rounded-lg shadow-lg ${isDarkMode ? "border-white shadow-blue-400" : "border-blue-900 shadow-white"}`}>
+        <div className="flex">
+          {!isDarkMode && <HiOutlineLocationMarker size={50} className="mt-1 menui12 cursor-pointer" />}
+          {isDarkMode && <HiLocationMarker size={50} className="mt-1 menui12 cursor-pointer text-blue-600" />}
+          <p className="text-xl ml-5 mt-4">Address:</p>
+        </div>
+        <h3 className="text-xl mt-3">Lathidad,Gujarat</h3>
       </div>
-  </div>
-  <form ref={form} data-aos="fade-right" className={`pb-12 h-[33rem] p-6 flex-col justify-center items-center w-[100%] ${isDarkMode===true?"border-white shadow-cyan-400":"border-blue-900 shadow-white"} border-4 m-auto rounded-lg shadow-lg`} onSubmit={sendEmail}>
+    </div>
+  <form ref={form} data-aos="fade-right" className={`pb-12 h-[33rem] p-6 flex-col justify-center items-center w-[80%] ${isDarkMode===true?"border-white shadow-cyan-400":"border-blue-900 shadow-white"} border-4 m-auto rounded-lg shadow-lg`} onSubmit={sendEmail}>
     <h1 className='text-center font-bold border-2 p-6 mb-10 text-xl rounded-xl hover:bg-white hover:text-black'>Contact Form</h1>
     <div className="mb-4">
       <label className="block  font-medium mb-2" htmfor="user_name">

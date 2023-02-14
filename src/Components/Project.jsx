@@ -82,14 +82,14 @@ let style_md = "mt-6 rounded-lg duration-200  h-52   md:h-60  sm:max-w-screen-lg
   return (
     <div  style={isDarkMode===true?{background:"#000006",color:"white"}:{backgroundColor:"#2874F0",color:"black"}} className=" m-auto  z-1  w-[100%] pb-5 project"  name="Projects">
       <div data-aos="fade-right">
-          <p className="text-5xl text-center hover:underline hover:text-blue-900 hover:underline-offset-8" >
+          <p className="text-5xl text-center mb-5 hover:underline hover:text-blue-900 hover:underline-offset-8" >
             Projects
           </p>
         </div>
 
-        <div style={isDarkMode===true?{backgroundColor:"#ff7474",color:"white"}:{backgroundColor:"#2ad56f",color:"black"}} className={`max-w-screen-lg z-1 m-20  mx-auto px-2 shadow-lg ${isDarkMode===true?"shadow-cyan-400":"shadow-white"} mt-0 md:mt-10 `}>
+        <div style={isDarkMode===true?{backgroundColor:"#ff7474",color:"white"}:{backgroundColor:"#2ad56f",color:"black"}} className={`lg:max-w-screen-lg w-[80%] z-1 m-20  mx-auto px-2 shadow-lg ${isDarkMode===true?"shadow-cyan-400":"shadow-white"} mt-0 md:mt-10 `}>
         <div className="max-w-screen-lg z-1 mx-auto grid lg:grid-cols-2  "> 
-        <div className='px-10 py-12 z-1 max-w-md mx-auto sm:max-w-xl lg:px-10 lg:py-6 lg:max-w-full'>
+        <div className='lg:p-12 p-5 z-1 max-w-md mx-auto sm:max-w-xl lg:px-10 lg:py-6 lg:max-w-full'>
           <div className="block lg:hidden" data-aos="fade-up">
           <ImageSlider  data={sephora} imgStyle= {style_md} />
           </div>
@@ -125,9 +125,9 @@ let style_md = "mt-6 rounded-lg duration-200  h-52   md:h-60  sm:max-w-screen-lg
       </div>
       </div>
       {/* skin store project */}
-        <div style={isDarkMode===true?{backgroundColor:"#ff7474",color:"white"}:{backgroundColor:"#2ad56f",color:"black"}} className={`max-w-screen-lg z-1 m-20  mx-auto px-2 shadow-lg ${isDarkMode===true?"shadow-cyan-400":"shadow-white"} mt-0 md:mt-10 `}>
+        <div style={isDarkMode===true?{backgroundColor:"#ff7474",color:"white"}:{backgroundColor:"#2ad56f",color:"black"}} className={`lg:max-w-screen-lg w-[80%] z-1 m-20  mx-auto px-2 shadow-lg ${isDarkMode===true?"shadow-cyan-400":"shadow-white"} mt-0 md:mt-10 `}>
         <div className="max-w-screen-lg mx-auto grid lg:grid-cols-2  "> 
-        <div className='px-10 py-12 max-w-md mx-auto sm:max-w-xl lg:px-10 lg:py-6 lg:max-w-full'>
+        <div className='lg:p-12 p-5 max-w-md mx-auto sm:max-w-xl lg:px-10 lg:py-6 lg:max-w-full'>
           <div className="block lg:hidden">
           <ImageSlider  data={skinstore} imgStyle= {style_md} data-aos="fade-up"/>
           </div>
@@ -163,9 +163,9 @@ let style_md = "mt-6 rounded-lg duration-200  h-52   md:h-60  sm:max-w-screen-lg
       </div>
       </div>
       {/* my coding ai project */}
-        <div style={isDarkMode===true?{backgroundColor:"#ff7474",color:"white"}:{backgroundColor:"#2ad56f",color:"black"}} className={`max-w-screen-lg z-1 m-20  mx-auto px-2 shadow-lg ${isDarkMode===true?"shadow-cyan-400":"shadow-white"} mt-0 md:mt-10 `}>
+        <div style={isDarkMode===true?{backgroundColor:"#ff7474",color:"white"}:{backgroundColor:"#2ad56f",color:"black"}} className={`lg:max-w-screen-lg w-[80%] z-1 m-20  mx-auto px-2 shadow-lg ${isDarkMode===true?"shadow-cyan-400":"shadow-white"} mt-0 md:mt-10 `}>
         <div className="max-w-screen-lg mx-auto grid lg:grid-cols-2  "> 
-        <div className='px-10 py-12 max-w-md mx-auto sm:max-w-xl lg:px-10 lg:py-6 lg:max-w-full'>
+        <div className='lg:p-12 p-5 max-w-md mx-auto sm:max-w-xl lg:px-10 lg:py-6 lg:max-w-full'>
           <div className="block lg:hidden">
           <ImageSlider  data={MycodingAi} imgStyle= {style_md} data-aos="fade-up"/>
           </div>
@@ -204,9 +204,9 @@ let style_md = "mt-6 rounded-lg duration-200  h-52   md:h-60  sm:max-w-screen-lg
       </div>
       </div>
       {/* tatacliq  */}
-      <div style={isDarkMode===true?{backgroundColor:"#ff7474",color:"white"}:{backgroundColor:"#2ad56f",color:"black"}} className={`max-w-screen-lg z-1 m-20  mx-auto px-2 shadow-lg ${isDarkMode===true?"shadow-cyan-400":"shadow-white"} mt-0 md:mt-10 `}>
+      <div style={isDarkMode===true?{backgroundColor:"#ff7474",color:"white"}:{backgroundColor:"#2ad56f",color:"black"}} className={`lg:max-w-screen-lg w-[80%] z-1 m-20  mx-auto px-2 shadow-lg ${isDarkMode===true?"shadow-cyan-400":"shadow-white"} mt-0 md:mt-10 `}>
         <div className="max-w-screen-lg mx-auto grid lg:grid-cols-2  "> 
-        <div className='px-10 py-12 max-w-md mx-auto sm:max-w-xl lg:px-10 lg:py-6 lg:max-w-full'>
+        <div className='lg:p-12 p-5 max-w-md mx-auto sm:max-w-xl lg:px-10 lg:py-6 lg:max-w-full'>
           <div className="block lg:hidden">
           <ImageSlider  data={tatacliq} imgStyle= {style_md} data-aos="fade-up"/>
           </div>

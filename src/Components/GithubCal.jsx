@@ -1,6 +1,7 @@
 import React,{useEffect} from 'react'
 import GitHubCalendar from "react-github-calendar";
 import AOS from "aos";
+import ReactTooltip from 'react-tooltip';
 function GithubCal({isDarkMode}) {
   useEffect(()=>{
     AOS.init({delay:200});
@@ -12,14 +13,16 @@ function GithubCal({isDarkMode}) {
         <p data-aos="fade-right" className="text-5xl text-center mb-10 hover:underline hover:text-blue-900 hover:underline-offset-8" >
             Github Calender
           </p>
-    <GitHubCalendar
+            <GitHubCalendar
     username="aniketparmar29"
     blockSize={15}
     blockMargin={5}
     color={isDarkMode===true? "#ff7474" : "#2ad56f"}
     fontSize={15}
     data-aos="fade-up"
-></GitHubCalendar>
+>
+<ReactTooltip delayShow={10} html />
+</GitHubCalendar>
 </div>
         </div>
 </>
