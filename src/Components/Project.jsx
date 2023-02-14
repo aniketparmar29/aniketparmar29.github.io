@@ -24,10 +24,6 @@ const Project = ({isDarkMode}) => {
 },[])
 const sephora = [
   {
-    id: 1,
-    src: a1,
-  },
-  {
     id: 2,
     src: a2,
   },
@@ -42,10 +38,6 @@ const sephora = [
 ];
 const skinstore =[
   {
-    id:1,
-    src:b1,
-  },
-  {
     id:2,
     src:b2,
   },
@@ -59,10 +51,6 @@ const skinstore =[
   }
 ]
 const tatacliq =[
-  {
-    id:1,
-    src:c1,
-  },
   {
     id:2,
     src:c2,
