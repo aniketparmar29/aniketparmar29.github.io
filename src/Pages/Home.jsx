@@ -11,6 +11,7 @@ import {Link} from 'react-scroll'
 import Resume from '../Download/Aniket-Parmar-Resume.pdf';
 import Contact from '../Components/Contact';
 import Project from '../Components/Project';
+import Footer from '../Components/Footer';
 function Home() {
 
   const [isDarkMode,toggleDarkMode]=useDarkMode();
@@ -92,6 +93,8 @@ function Home() {
   </div>
     <hr />
       <Contact isDarkMode={isDarkMode}/>
+    <hr />
+      <Footer isDarkMode={isDarkMode}/>
         <button className='fixed z-100 bottom-4 right-2'><Link to='Home' smooth duration={1200}>{isDarkMode && <RiArrowUpCircleFill className='text-blue-400 hover:text-blue-500' size={50}/>}
               {!isDarkMode && <RiArrowUpCircleLine className='text-blue-800 hover:text-blue-900'size={50}/>}</Link></button>
     </div>

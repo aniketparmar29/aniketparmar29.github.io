@@ -1,5 +1,9 @@
 import React, { useRef,useEffect } from 'react';
 import emailjs from '@emailjs/browser';
+import {FaPhoneSquareAlt} from 'react-icons/fa'
+import {BsTelephone} from 'react-icons/bs'
+import {MdOutlineEmail,MdEmail} from 'react-icons/md'
+import {HiLocationMarker,HiOutlineLocationMarker} from 'react-icons/hi'
 import AOS from "aos";
 
 const Contact = ({isDarkMode}) => {
@@ -20,52 +24,72 @@ const Contact = ({isDarkMode}) => {
     AOS.init({delay:200});
   },[])
   return (
-    <div name="Contact"  style={isDarkMode===true?{background:"#000006",color:"white"}:{backgroundColor:"#2874F0",color:"black"}}>
-      <p data-aos="fade-right" className="text-5xl text-center mb-10 hover:underline hover:text-blue-900 hover:underline-offset-8" >
+    <div name="Contact" className='pb-10' style={isDarkMode===true?{background:"#000006",color:"white"}:{backgroundColor:"#2874F0",color:"black"}}>
+      <p data-aos="fade-right" className="text-5xl text-center pt-10 mb-10 hover:underline hover:text-blue-900 hover:underline-offset-8" >
             Contact
           </p>
-  <form ref={form} data-aos="fade-down" class=" p-6 flex-col justify-center items-center w-[70%]  border-4 m-auto rounded-lg shadow-md" onSubmit={sendEmail}>
-    <div class="mb-4">
-      <label class="block text-gray-700 font-medium mb-2" for="user_name">
+    <div className='max-w-screen md:max-w-screen-lg  mx-auto grid lg:grid-cols-2 items-center'>
+
+  <div data-aos="fade-up" className={`  p-6 flex-col h-[25rem]  justify-between items-center  ${isDarkMode===true?"border-white shadow-cyan-400":"border-blue-900 shadow-white"} border-2  rounded-lg shadow-lg`}>
+    <div className={`  p-6 flex font-extrabold justify-between  items-center  ${isDarkMode===true?"border-white shadow-red-400":"border-blue-900 shadow-white"} border-2  rounded-lg shadow-lg`}>
+    {!isDarkMode && <BsTelephone size={50}  className='mt-1  menui12 cursor-pointer'/>}
+          {isDarkMode && <FaPhoneSquareAlt size={50}  className='mt-1  menui12 cursor-pointer text-blue-600'/>}
+      <h3 className='text-xl mt-3'>+918160665677</h3>
+      </div>
+    <div className={`  p-6 flex font-extrabold justify-between mt-5 items-center  ${isDarkMode===true?"border-white shadow-green-400":"border-blue-900 shadow-white"} border-2  rounded-lg shadow-lg`}>
+    {!isDarkMode && <MdOutlineEmail size={50}  className='mt-1  menui12 cursor-pointer'/>}
+          {isDarkMode && <MdEmail size={50}  className='mt-1  menui12 cursor-pointer text-blue-600'/>}
+      <h3 className='text-xl mt-3'>aniketparmar068@gmail.com</h3>
+      </div>
+    <div className={`  p-6 flex font-extrabold justify-between mt-5 items-center  ${isDarkMode===true?"border-white shadow-blue-400":"border-blue-900 shadow-white"} border-2  rounded-lg shadow-lg`}>
+    {!isDarkMode && <HiOutlineLocationMarker size={50}  className='mt-1  menui12 cursor-pointer'/>}
+          {isDarkMode && <HiLocationMarker size={50}  className='mt-1  menui12 cursor-pointer text-blue-600'/>}
+      <h3 className='text-xl mt-3'>Lathidad,Gujarat</h3>
+      </div>
+  </div>
+  <form ref={form} data-aos="fade-down" className={` p-6 flex-col justify-center items-center w-[70%] ${isDarkMode===true?"border-white shadow-cyan-400":"border-blue-900 shadow-white"} border-4 m-auto rounded-lg shadow-xl`} onSubmit={sendEmail}>
+    <div className="mb-4">
+      <label className="block  font-medium mb-2" htmfor="user_name">
         Name
       </label>
       <input 
-        class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" 
+        className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" 
         type="text" 
         name="user_name" 
         id="user_name" 
       />
     </div>
-    <div class="mb-4">
-      <label class="block text-gray-700 font-medium mb-2" for="user_email">
+    <div className="mb-4">
+      <label className="block font-medium mb-2" htmfor="user_email">
         Email
       </label>
       <input 
-        class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" 
+        className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" 
         type="email" 
         name="user_email" 
         id="user_email" 
-      />
+        />
     </div>
-    <div class="mb-4">
-      <label class="block text-gray-700 font-medium mb-2" for="message">
+    <div className="mb-4">
+      <label className="block  font-medium mb-2" htmfor="message">
         Message
       </label>
       <textarea 
-        class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" 
+        className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" 
         name="message" 
         id="message"
-      />
+        />
     </div>
-    <div class="flex items-center justify-end">
+    <div className="flex items-center justify-end">
       <button 
-        class="bg-purple-500 hover:bg-purple-700 text-white font-medium py-2 px-4 rounded focus:outline-none focus:shadow-outline" 
+        className="bg-purple-500 hover:bg-purple-700 text-white font-medium py-2 px-4 rounded focus:outline-none focus:shadow-outline" 
         type="submit"
-      >
+        >
         Send
       </button>
     </div>
   </form>
+ </div>
 </div>
 
   );
