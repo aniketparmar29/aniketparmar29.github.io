@@ -30,7 +30,7 @@ const Contact = ({isDarkMode}) => {
           </p>
     <div className='max-w-screen md:max-w-screen-lg  mx-auto grid lg:grid-cols-2 items-center'>
 
-  <div data-aos="fade-up" className={`  p-6 flex-col h-[25rem]  justify-between items-center  ${isDarkMode===true?"border-white shadow-cyan-400":"border-blue-900 shadow-white"} border-2  rounded-lg shadow-lg`}>
+  <div data-aos="fade-up" className={`  p-6 flex-col h-[25rem] mb-5 justify-between items-center  ${isDarkMode===true?"border-white shadow-cyan-400":"border-blue-900 shadow-white"} border-2  rounded-lg shadow-lg`}>
     <div className={`  p-6 flex font-extrabold justify-between  items-center  ${isDarkMode===true?"border-white shadow-red-400":"border-blue-900 shadow-white"} border-2  rounded-lg shadow-lg`}>
     {!isDarkMode && <BsTelephone size={50}  className='mt-1  menui12 cursor-pointer'/>}
           {isDarkMode && <FaPhoneSquareAlt size={50}  className='mt-1  menui12 cursor-pointer text-blue-600'/>}
