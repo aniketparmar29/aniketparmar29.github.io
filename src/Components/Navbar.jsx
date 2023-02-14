@@ -41,7 +41,7 @@ function Navbar({isDarkMode,toggleDarkMode}) {
         
     },[isDarkMode])
   return (
-    <div name="Navbar" className='lg:sticky md:sticky xl:sticky sticky  top-0 z-50'>
+    <div name="Navbar" className='lg:sticky navji md:sticky xl:sticky sticky  top-0 z-50'>
         <nav className=' navbarj flex  justify-between  border-b-2  border-slate-900 ' style={isDarkMode===true?{background:"#000006",color:"white"}:{backgroundColor:"#2874F0",color:"black"}} >
             <div className='flex xl:w-[130px] w-[100%] justify-between'>
             <Link to="Home" smooth duration={1500}><img className='xl:h-[50%] mt-4' src={isDarkMode===true?light:dark} alt="logo" /></Link>

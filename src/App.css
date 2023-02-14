@@ -1,0 +1,67 @@
+body {
+    transition: background-color 2s ease;
+  }
+
+.navbarj {
+    transition: background-color 2s ease, color 2s ease;
+}
+.hamburger{
+    transition: background-color 2s ease, color 2s ease;
+}
+.menuiji{
+    transition: background-color 2s ease, color 2s ease;
+}
+.menui{
+    transition: background-color 2s ease, color 2s ease;
+}
+.home{
+    transition: background-color 2s ease, color 2s ease;
+}
+.contact{
+    transition: background-color 2s ease, color 2s ease;
+}
+.project{
+    transition: background-color 2s ease, color 2s ease;
+}
+.skill{
+    transition: background-color 2s ease, color 2s ease;
+}
+.github{
+    transition: background-color 2s ease, color 2s ease;
+}
+.footer{
+    transition: background-color 2s ease, color 2s ease;
+}
+.about{
+    transition: background-color 2s ease, color 2s ease;
+}
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .circular-animation {
+    animation-name: spin;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+  }
+  .piji {
+    width: 95%;
+    height: 40vh;
+    margin: 20px 10px;
+    border: 2px solid rgb(243, 242, 242);
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
+.imgji {
+    width: 100%;
+    transition: all 10s ease;
+}
+
+.piji:hover .imgji {
+    transform: translateY(-100%);
+}

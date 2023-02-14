@@ -92,7 +92,7 @@ const MycodingAi =[
 ]
 let style_md = "mt-6 rounded-lg duration-200  h-52   md:h-60  sm:max-w-screen-lg sm:object-cover object-center lg:hidden ";
   return (
-    <div style={isDarkMode===true?{background:"#000006",color:"white"}:{backgroundColor:"#2874F0",color:"black"}} className=" m-auto  z-1  w-[100%] pb-5"  name="Projects">
+    <div  style={isDarkMode===true?{background:"#000006",color:"white"}:{backgroundColor:"#2874F0",color:"black"}} className=" m-auto  z-1  w-[100%] pb-5 project"  name="Projects">
       <div data-aos="fade-right">
           <p className="text-5xl text-center hover:underline hover:text-blue-900 hover:underline-offset-8" >
             Projects
@@ -129,9 +129,9 @@ let style_md = "mt-6 rounded-lg duration-200  h-52   md:h-60  sm:max-w-screen-lg
             </div>
         </div>
 
-      <div className="hidden relative lg:block " data-aos="fade-left" >
+      <div className="hidden relative lg:block piji" data-aos="fade-left" >
         <a href="https://aquamarine-pasca-26e8fd.netlify.app/" target={"_blank"} rel='noreferrer'>
-        <img className="absolute inset-0 w-full   hover:scale-110  -mx-3 h-full object-contain  duration-700 hover:cursor-pointer " src={a1} alt="logo" />
+        <img className="imgji" src={a1} alt="logo" />
         </a>
         </div>
       </div>
@@ -167,9 +167,9 @@ let style_md = "mt-6 rounded-lg duration-200  h-52   md:h-60  sm:max-w-screen-lg
             </div>
         </div>
 
-      <div className="hidden relative lg:block " data-aos="fade-left" >
+      <div className="hidden relative lg:block piji " data-aos="fade-left" >
         <a href="https://elegant-sprite-192e51.netlify.app/" target={"_blank"} rel='noreferrer'> 
-      <img className="absolute inset-0 w-full   hover:scale-110  -mx-3 h-full object-contain  duration-700 hover:cursor-pointer " src={b1} alt="logo" />
+      <img className="imgji " src={b1} alt="logo" />
         </a>
         </div>
       </div>
@@ -208,7 +208,7 @@ let style_md = "mt-6 rounded-lg duration-200  h-52   md:h-60  sm:max-w-screen-lg
             </div>
         </div>
 
-      <div className="hidden relative lg:block " data-aos="fade-left" >
+      <div className="hidden relative lg:block  " data-aos="fade-left" >
         <a href="https://myhelperai.vercel.app/" target={"_blank"} rel='noreferrer'> 
       <img className="absolute inset-0 w-full   hover:scale-110  -mx-3 h-full object-contain  duration-700 hover:cursor-pointer " src={d1} alt="logo" />
         </a>
@@ -248,9 +248,9 @@ let style_md = "mt-6 rounded-lg duration-200  h-52   md:h-60  sm:max-w-screen-lg
             </div>
         </div>
 
-      <div className="hidden relative lg:block " data-aos="fade-left" >
+      <div className="hidden relative lg:block piji" data-aos="fade-left" >
       <a href="https://formalclick.netlify.app/" target={"_blank"} rel='noreferrer'>
-      <img className="absolute inset-0 w-full   hover:scale-110  -mx-3 h-full object-contain  duration-700 hover:cursor-pointer " src={c1} alt="logo" />
+      <img className="imgji" src={c1} alt="logo" />
       </a>
         </div>
       </div>

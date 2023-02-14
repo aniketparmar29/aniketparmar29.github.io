@@ -85,7 +85,7 @@ const Skills = ({isDarkMode}) => {
   return (
     <div
       name="Skills"
-      className="w-full pt-2 md:pt-28 z-0 hover:z-0 "
+      className="w-full pt-2 md:pt-28 z-0 hover:z-0 skill"
       style={isDarkMode===true?{background:"#000006",color:"white"}:{backgroundColor:"#2874F0",color:"black"}}
     >
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full " >
