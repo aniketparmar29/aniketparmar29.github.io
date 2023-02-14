@@ -17,7 +17,7 @@ const Contact = ({isDarkMode}) => {
     }, (error) => {
       console.log(error.text);
     });
-    document.getElementById("contactfrom").reset();
+    window.document.getElementById("contactfrom").reset();
   };
   
   useEffect(()=>{
