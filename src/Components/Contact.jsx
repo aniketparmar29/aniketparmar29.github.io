@@ -58,25 +58,25 @@ const Contact = ({isDarkMode}) => {
   <form ref={form} data-aos="fade-right" className={`pb-12 h-[33rem] p-6 flex-col justify-center items-center w-[80%] ${isDarkMode===true?"border-white shadow-cyan-400":"border-blue-900 shadow-white"} border-4 m-auto rounded-lg shadow-lg`} onSubmit={sendEmail}>
     <h1 className='text-center font-bold border-2 p-6 mb-10 text-xl rounded-xl hover:bg-white hover:text-black'>Contact Form</h1>
     <div className="mb-4">
-      <label className="block  font-medium mb-2" htmfor="user_name">
+      <label className="block  font-medium mb-2" htmfor="from_name">
         Name
       </label>
       <input 
         className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" 
         type="text" 
-        name="user_name" 
-        id="user_name" 
+        name="from_name" 
+        id="from_name" 
       />
     </div>
     <div className="mb-4">
-      <label className="block font-medium mb-2" htmfor="user_email">
+      <label className="block font-medium mb-2" htmfor="from_email">
         Email
       </label>
       <input 
         className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" 
         type="email" 
-        name="user_email" 
-        id="user_email" 
+        name="from_email" 
+        id="from_email" 
         />
     </div>
     <div className="mb-4">
