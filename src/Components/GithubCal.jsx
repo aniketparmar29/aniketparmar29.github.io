@@ -23,6 +23,20 @@ function GithubCal({isDarkMode}) {
 >
 <ReactTooltip delayShow={10} html />
 </GitHubCalendar>
+<div className='lg:ml-[25%] md:ml-[20%] sm:ml[15%]'>
+<picture >
+  <br />
+<source 
+  srcset={`https://github-readme-stats.vercel.app/api?username=aniketparmar29&show_icons=true&theme=${isDarkMode===true?"dark":"light"}`}
+  media="(prefers-color-scheme: dark)"
+/>
+<source
+  srcset="https://github-readme-stats.vercel.app/api?username=aniketparmar29&show_icons=true"
+  media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+/>
+<img src="https://github-readme-stats.vercel.app/api?username=aniketparmar29&show_icons=true" alt='stats' />
+</picture>
+</div>
 </div>
         </div>
 </>
