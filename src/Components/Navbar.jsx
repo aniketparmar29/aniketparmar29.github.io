@@ -44,7 +44,7 @@ function Navbar({isDarkMode,toggleDarkMode}) {
     <div name="Navbar" className='lg:sticky navji md:sticky xl:sticky sticky  top-0 z-50'>
         <nav className=' navbarj flex  justify-between  border-b-2  border-slate-900 ' style={isDarkMode===true?{background:"#000006",color:"white"}:{backgroundColor:"#2874F0",color:"black"}} >
             <div className='flex xl:w-[130px] w-[100%] justify-between'>
-            <Link to="Home" smooth duration={1500}><img className='xl:h-[50%] mt-4' src={isDarkMode===true?light:dark} alt="logo" /></Link>
+            <Link to="Home" smooth duration={1500}><img className='xl:h-[50%] mt-4 pl-[10%]' src={isDarkMode===true?light:dark} alt="logo" /></Link>
             <div>
             <h1 onClick={closehamburger} style={isDarkMode===true?{border:"1px solid white"}:{border:"1px solid black"}} className='space-y-2 m-3 xl:hidden md:hidden sm:hidden  border p-2 xl:text-[100px] md:text-[70px] hidden closeham'>X</h1>
             <div onClick={ophamburger} className="hamburger border p-2  xl:hidden md:hidden sm:hidden space-y-2 m-3" style={isDarkMode===true?{border:"1px solid white"}:{border:"1px solid black"}}>
@@ -56,12 +56,12 @@ function Navbar({isDarkMode,toggleDarkMode}) {
 
             </div>
             <ul style={isDarkMode===true?{background:"#000006",color:"white"}:{backgroundColor:"#2874F0",color:"black"}} className='hidden menui px-2 py-4 space-x-11 justify-end sm:flex  xl:flex 2xl:flex  md:flex'>
-                <li className='hover:underline hover:text-white hover:underline-offset-8 menui1 cursor-pointer'><Link to="Home" smooth duration={1500}>Home</Link></li>
-                <li className='hover:underline hover:text-white hover:underline-offset-8 cursor-pointer'><Link to="About" smooth duration={1500}>About</Link></li>
-                <li className='hover:underline hover:text-white hover:underline-offset-8 cursor-pointer'><Link to="Skills" smooth duration={1500}>Skills</Link></li>
-                <li className='hover:underline hover:text-white hover:underline-offset-8 cursor-pointer'><Link to="Projects" smooth duration={1500}>Projects</Link></li>
-                <li className='hover:underline hover:text-white hover:underline-offset-8 cursor-pointer'><Link to="Contact" smooth duration={1500}>Contacts</Link></li>
-                <li  onClick={handleDownload} className='hover:underline hover:text-white hover:underline-offset-8 cursor-pointer'><a href="https://drive.google.com/file/d/1LbPArwTFWUcw_OZZNMw0JCojAp1GcFa7/view?usp=share_link" rel='noreferrer' target={"_blank"}>Resume</a></li>
+                <li className='font-bold text-lg hover:underline hover:text-white hover:underline-offset-8 menui1 cursor-pointer'><Link to="Home" smooth duration={1500}>Home</Link></li>
+                <li className='font-bold text-lg hover:underline hover:text-white hover:underline-offset-8 cursor-pointer'><Link to="About" smooth duration={1500}>About</Link></li>
+                <li className='font-bold text-lg hover:underline hover:text-white hover:underline-offset-8 cursor-pointer'><Link to="Skills" smooth duration={1500}>Skills</Link></li>
+                <li className='font-bold text-lg hover:underline hover:text-white hover:underline-offset-8 cursor-pointer'><Link to="Projects" smooth duration={1500}>Projects</Link></li>
+                <li className='font-bold text-lg hover:underline hover:text-white hover:underline-offset-8 cursor-pointer'><Link to="Contact" smooth duration={1500}>Contacts</Link></li>
+                <li  onClick={handleDownload} className='font-bold text-lg hover:underline hover:text-white hover:underline-offset-8 cursor-pointer'><a href="https://drive.google.com/file/d/1LbPArwTFWUcw_OZZNMw0JCojAp1GcFa7/view?usp=share_link" rel='noreferrer' target={"_blank"}>Resume</a></li>
                 {!isDarkMode && <FaMoon size={25} onClick={toggleDarkMode} className='mt-1 cursor-pointer'/>}
                 {isDarkMode && <FaSun size={25} onClick={toggleDarkMode} className='mt-1 cursor-pointer text-orange-500 '/>}
             </ul>

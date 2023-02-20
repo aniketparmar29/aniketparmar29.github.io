@@ -20,7 +20,7 @@ import ImageSlider from "./ImageSlider";
 import {SiCss3, SiHtml5, SiJavascript, SiReact, SiRedux,SiExpress,SiNodedotjs} from "react-icons/si";
 const Project = ({isDarkMode}) => {
   useEffect(()=>{
-    AOS.init({delay:200});
+    AOS.init({delay:50});
 },[])
 const sephora = [
   {
