@@ -24,7 +24,7 @@ const Contact = ({isDarkMode}) => {
     AOS.init({delay:200});
   },[])
   return (
-    <div name="Contact" className={`pb-10 contact ${isDarkMode ? "bg-black text-white" : "bg-blue-500 text-black"}`}>
+    <div name="Contact" className={`pb-10 contact`} style={isDarkMode===true?{background:"#000006",color:"white"}:{backgroundColor:"#2874F0",color:"black"}}>
   <p data-aos="fade-right" className="text-5xl text-center pt-10 mb-10 hover:underline hover:text-blue-900 hover:underline-offset-8">
     Contact
   </p>

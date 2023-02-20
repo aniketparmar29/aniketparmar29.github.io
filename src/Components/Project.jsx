@@ -80,7 +80,7 @@ const MycodingAi =[
 ]
 let style_md = "mt-6 rounded-lg duration-200  h-52   md:h-60  sm:max-w-screen-lg sm:object-cover object-center lg:hidden ";
   return (
-    <div  style={isDarkMode===true?{background:"#000006",color:"white"}:{backgroundColor:"#2874F0",color:"black"}} className=" m-auto  z-1  w-[100%] pb-5 project"  name="Projects">
+    <div  style={isDarkMode===true?{background:"#000006",color:"white"}:{backgroundColor:"#2874F0",color:"black"}} className={` m-auto  z-1  w-[100%] pb-5 project `}  name="Projects">
       <div data-aos="fade-right">
           <p className="text-5xl text-center mb-5 hover:underline hover:text-blue-900 hover:underline-offset-8" >
             Projects

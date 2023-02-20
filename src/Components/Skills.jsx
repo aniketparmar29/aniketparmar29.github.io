@@ -5,7 +5,7 @@ import css from "../assets/css.png";
 import javascript from "../assets/javascript.png";
 import reactImage from "../assets/react.png";
 import typescript from "../assets/typescript.png";
-import github from "../assets/github.png";
+import next from "../assets/nextjs.png";
 import tailwind from "../assets/tailwind.png";
 import redux from "../assets/redux.png";
 import node from "../assets/node.png";
@@ -60,8 +60,8 @@ const Skills = ({isDarkMode}) => {
 
     {
       id: 9,
-      src: github,
-      title: "GitHub",
+      src: next,
+      title: "NextjS",
     },
     {
       id: 10,
