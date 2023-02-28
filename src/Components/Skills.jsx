@@ -98,7 +98,7 @@ const Skills = ({isDarkMode}) => {
         <div  className="w-full grid grid-cols-2 mt-8 sm:grid-cols-3 lg:grid-cols-4 gap-8 text-center py-8 " data-aos="fade-up"  >
           {techs.map(({ id, src, title }) => (
             <div
-            style={isDarkMode===true?{backgroundColor:"#ff7474",color:"white"}:{backgroundColor:"#2ad56f",color:"black"}}
+            style={isDarkMode===true?{backgroundColor:"#ff7474",color:"white"}:{backgroundColor:"#07F59F",color:"black"}}
               key={id}
               className={`shadow-lg  duration-300 py-2 rounded-lg  ${isDarkMode===true?"shadow-cyan-400":"shadow-white"} hover:scale-110` }  
             >
