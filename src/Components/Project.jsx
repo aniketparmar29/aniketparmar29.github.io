@@ -133,7 +133,7 @@ let style_md = "mt-6 rounded-lg duration-200  h-52   md:h-60  sm:max-w-screen-lg
           <h1 className="mt-6 text-xl text-blue-500 font-bold sm:mt-8  sm:text-3xl lg:text-2xl" >My Coding AI
             </h1>
             <p className="w-full  mt-2  sm:mt-2 sm:text-xl"  >
-            My coding ai is a clone of chatGtp where you search and learn from it ai based app arond open ai. open ai is ai base multi national company that provide ai based solution . they provide some free api as well.
+            My coding AI is a clone of CHATGTP where you search and learn from it ai based app arond open ai. open ai is ai base multi national company that provide ai based solution . they provide some free api as well.
             </p>
             <div className='flex justify-center items-center gap-x-2 mt-5'  >
             <div><SiJavascript size="32px" color="yellow" className="hover:animate-bounce hover:cursor-pointer"/></div>
