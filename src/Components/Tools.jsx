@@ -1,6 +1,7 @@
 import React,{useEffect} from "react";
 import AOS from "aos";
 import npm from '../assets/npm.png'
+import VsCode from '../assets/VsCode.png'
 const Tools = ({isDarkMode}) => {
   useEffect(()=>{
     AOS.init({delay:200});
@@ -8,7 +9,7 @@ const Tools = ({isDarkMode}) => {
   const techs = [
     {
       id: 1,
-      src: "https://camo.githubusercontent.com/f7aaf01926d76084fbd6bda1d6d08cd933a8af188f36694e98c885da9d636a5d/68747470733a2f2f636f64652e76697375616c73747564696f2e636f6d2f6173736574732f696d616765732f636f64652d737461626c652e706e67",
+      src: VsCode,
       title: "Vs Code",
     },
     {

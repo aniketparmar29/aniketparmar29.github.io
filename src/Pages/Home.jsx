@@ -48,7 +48,7 @@ function Home() {
               cursor={true}
                 repeat={Infinity}
                 // style={{ fontSize: '2rem' }}
-                className={isDarkMode===true?"text-blue-400 xl:text-4xl text-2xl animate-none md:animate-pulse ":"text-blue-900 xl:text-4xl text-2xl animate-none md:animate-pulse z-0"}
+                className={isDarkMode===true?"text-white xl:text-4xl text-2xl animate-none md:animate-pulse ":"text-black xl:text-4xl text-2xl animate-none md:animate-pulse z-0"}
             />
               </div>
             <div className='mt-5 flex justify-center  xl:justify-start space-x-8'>

@@ -86,45 +86,6 @@ let style_md = "mt-6 rounded-lg duration-200  h-52   md:h-60  sm:max-w-screen-lg
             Projects
           </p>
         </div>
-
-        <div style={isDarkMode===true?{backgroundColor:"#ff7474",color:"white"}:{backgroundColor:"#07F59F",color:"black"}} className={`lg:max-w-screen-lg w-[80%] z-1 m-20  mx-auto px-2 shadow-lg ${isDarkMode===true?"shadow-cyan-400":"shadow-white"} mt-0 md:mt-10 `}>
-        <div className="max-w-screen-lg z-1 mx-auto grid lg:grid-cols-2  "> 
-        <div className='lg:p-12 p-5 z-1 max-w-md mx-auto sm:max-w-xl lg:px-10 lg:py-6 lg:max-w-full'>
-          <div className="block lg:hidden" >
-          <ImageSlider  data={sephora} imgStyle= {style_md} />
-          </div>
-          <h1 className="mt-6 text-xl text-blue-500 font-bold sm:mt-8  sm:text-3xl lg:text-2xl"  >Sephora Clone
-            </h1>
-            <p className="w-full  mt-2  sm:mt-2 sm:text-xl"  >
-            Sephora is a Beauty And Cosmetics Product Ecommerce webApp
-            </p>
-            <div className='flex justify-center items-center gap-x-2 mt-5' >
-            <div><SiJavascript size="32px" color="yellow" className="hover:animate-bounce hover:cursor-pointer"/></div>
-            <div><SiHtml5 size="32px" color="#e34c26" className="hover:animate-bounce hover:cursor-pointer"/></div>
-            <div><SiCss3 size="32px" color="#264de4" className="hover:animate-bounce hover:cursor-pointer"/></div>
-            </div>
-            <div className="max-w-screen-md flex justify-center space-x-6"  >
-            <div className="mt-4 sm:mt-6" >
-              <a href="https://github.com/aniketparmar29/Sephora-Clone" target={"_blank"} rel='noreferrer'>
-                <button className="inline-block px-4 py-2 rounded-lg  hover:opacity-70 bg-gradient-to-r from-cyan-400 to-blue-500 cursor-pointershadow-lg uppercase tracking-wide font-semibold text-sm text-white sm:text-base" > Code</button>
-              </a>
-            </div>
-            <div className="mt-4 sm:mt-6"  >
-              <a href="https://aquamarine-pasca-26e8fd.netlify.app/" target={"_blank"} rel='noreferrer'>
-                <button className="inline-block px-4 py-2 rounded-lg hover:opacity-70 bg-gradient-to-r from-cyan-400 to-blue-500 cursor-pointer shadow-lg uppercase tracking-wide font-semibold text-sm text-white sm:text-base" >Demo</button>
-              </a>
-            </div>
-            </div>
-        </div>
-
-      <div className="hidden relative lg:block piji"  >
-        <a href="https://aquamarine-pasca-26e8fd.netlify.app/" target={"_blank"} rel='noreferrer'>
-        <img className="imgji" src={a1} alt="logo" />
-        </a>
-        </div>
-      </div>
-      </div>
-      {/* skin store project */}
         <div style={isDarkMode===true?{backgroundColor:"#ff7474",color:"white"}:{backgroundColor:"#07F59F",color:"black"}} className={`lg:max-w-screen-lg w-[80%] z-1 m-20  mx-auto px-2 shadow-lg ${isDarkMode===true?"shadow-cyan-400":"shadow-white"} mt-0 md:mt-10 `}>
         <div className="max-w-screen-lg mx-auto grid lg:grid-cols-2  "> 
         <div className='lg:p-12 p-5 max-w-md mx-auto sm:max-w-xl lg:px-10 lg:py-6 lg:max-w-full'>
@@ -134,7 +95,7 @@ let style_md = "mt-6 rounded-lg duration-200  h-52   md:h-60  sm:max-w-screen-lg
           <h1 className="mt-6 text-xl text-blue-500 font-bold sm:mt-8  sm:text-3xl lg:text-2xl" >SkinStore Clone
             </h1>
             <p className="w-full  mt-2  sm:mt-2 sm:text-xl"  >
-            SkinStore offers premium beauty products like lipstick, Eyeliners, and many more products with the latest in innovative clinical skincare and luxury spa products.
+            SkinStore offers premium beauty products like lipstick, Eyeliner, and many more products with the latest in innovative clinical skincare and luxury spa products.
             </p>
             <div className='flex justify-center items-center gap-x-2 mt-5'  >
             <div><SiJavascript size="32px" color="yellow" className="hover:animate-bounce hover:cursor-pointer"/></div>
@@ -172,8 +133,7 @@ let style_md = "mt-6 rounded-lg duration-200  h-52   md:h-60  sm:max-w-screen-lg
           <h1 className="mt-6 text-xl text-blue-500 font-bold sm:mt-8  sm:text-3xl lg:text-2xl" >My Coding AI
             </h1>
             <p className="w-full  mt-2  sm:mt-2 sm:text-xl"  >
-            My coding ai is clone of chatGtp where you search and learn from it ai based app arond open ai. open ai is ai base multi national company that provide ai based solution .
-            they provide some  free api as well.
+            My coding ai is a clone of chatGtp where you search and learn from it ai based app arond open ai. open ai is ai base multi national company that provide ai based solution . they provide some free api as well.
             </p>
             <div className='flex justify-center items-center gap-x-2 mt-5'  >
             <div><SiJavascript size="32px" color="yellow" className="hover:animate-bounce hover:cursor-pointer"/></div>
@@ -210,10 +170,10 @@ let style_md = "mt-6 rounded-lg duration-200  h-52   md:h-60  sm:max-w-screen-lg
           <div className="block lg:hidden">
           <ImageSlider  data={tatacliq} imgStyle= {style_md} />
           </div>
-          <h1 className="mt-6 text-xl text-blue-500 font-bold sm:mt-8  sm:text-3xl lg:text-2xl" >tatacliq Clone
+          <h1 className="mt-6 text-xl text-blue-500 font-bold sm:mt-8  sm:text-3xl lg:text-2xl" >Tatacliq Clone
             </h1>
             <p className="w-full  mt-2  sm:mt-2 sm:text-xl"  >
-            tatacliq is Ecommerce Services based website used by wide range of customers.The intention was to introduce the concept of healthy eating in Hyderabad.
+            TATA CLiQ is Shop Online with India's most trusted destination Our sleek, immersive design allows you to easily navigate between categories and brand stores to find a wide selection of womenswear, menswear, kidswear, footwear, watches, accessories, footwear, watches and accessories online.
             </p>
             <div className='flex justify-center items-center gap-x-2 mt-5' >
             <div><SiHtml5 size="32px" color="#e34c26" className="hover:animate-bounce hover:cursor-pointer"/></div>
