@@ -35,7 +35,7 @@ const Tools = ({isDarkMode}) => {
     <div
       name="Tools"
       className="w-full pt-2 md:pt-2 z-0 hover:z-0 skill"
-      style={isDarkMode===true?{background:"#000006",color:"white"}:{backgroundColor:"#2874F0",color:"black"}}
+      style={isDarkMode===true?{background:"#000006",color:"white"}:{backgroundColor:"white",color:"black"}}
     >
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full " >
         <div data-aos="fade-right">
@@ -47,7 +47,7 @@ const Tools = ({isDarkMode}) => {
         <div  className="w-full grid grid-cols-2 mt-8 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center py-8 " data-aos="fade-up"  >
           {techs.map(({ id, src, title }) => (
             <div
-            style={isDarkMode===true?{backgroundColor:"#ff7474",color:"white"}:{backgroundColor:"#07F59F",color:"black"}}
+            style={isDarkMode===true?{backgroundColor:"#ff7474",color:"white"}:{backgroundColor:"#C0EEF2",color:"black"}}
               key={id}
               className={`shadow-lg  duration-300 py-2 rounded-lg  ${isDarkMode===true?"shadow-cyan-400":"shadow-white"} hover:scale-110` }  
             >

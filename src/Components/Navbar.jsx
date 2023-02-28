@@ -42,7 +42,7 @@ function Navbar({isDarkMode,toggleDarkMode}) {
     },[isDarkMode])
   return (
     <div name="Navbar" className='lg:sticky navji md:sticky xl:sticky sticky  top-0 z-50'>
-        <nav className=' navbarj flex  justify-between  border-b-2  border-slate-900 ' style={isDarkMode===true?{background:"#000006",color:"white"}:{backgroundColor:"#2874F0",color:"black"}} >
+        <nav className=' navbarj flex  justify-between  border-b-2  border-slate-900 ' style={isDarkMode===true?{background:"#000006",color:"white"}:{backgroundColor:"white",color:"black"}} >
             <div className='flex xl:w-[130px] w-[100%] justify-between'>
             <Link to="Home" smooth duration={1500}><img className='xl:h-[50%] mt-4 pl-[10%]' src={isDarkMode===true?light:dark} alt="logo" /></Link>
             <div>
@@ -55,7 +55,7 @@ function Navbar({isDarkMode,toggleDarkMode}) {
             </div>
 
             </div>
-            <ul style={isDarkMode===true?{background:"#000006",color:"white"}:{backgroundColor:"#2874F0",color:"black"}} className='hidden menui px-2 py-4 space-x-11 justify-end sm:flex  xl:flex 2xl:flex  md:flex'>
+            <ul style={isDarkMode===true?{background:"#000006",color:"white"}:{backgroundColor:"white",color:"black"}} className='hidden menui px-2 py-4 space-x-11 justify-end sm:flex  xl:flex 2xl:flex  md:flex'>
                 <li className='font-bold text-lg hover:underline hover:text-white hover:underline-offset-8 menui1 cursor-pointer'><Link to="Home" smooth duration={1500}>Home</Link></li>
                 <li className='font-bold text-lg hover:underline hover:text-white hover:underline-offset-8 cursor-pointer'><Link to="About" smooth duration={1500}>About</Link></li>
                 <li className='font-bold text-lg hover:underline hover:text-white hover:underline-offset-8 cursor-pointer'><Link to="Skills" smooth duration={1500}>Skills</Link></li>
@@ -69,7 +69,7 @@ function Navbar({isDarkMode,toggleDarkMode}) {
 
 
         </nav>
-            <ul style={isDarkMode===true?{background:"#000006",color:"white"}:{backgroundColor:"#2874F0",color:"black"}}  className=" hidden  menuiji px-2 py-4 space-x-11 justify-end  xl:hidden   md:hidden">
+            <ul style={isDarkMode===true?{background:"#000006",color:"white"}:{backgroundColor:"white",color:"black"}}  className=" hidden  menuiji px-2 py-4 space-x-11 justify-end  xl:hidden   md:hidden">
                 {!isDarkMode && <FaMoon size={50} onClick={toggleDarkMode} className='mt-1 ml-11 menui12 cursor-pointer'/>}
                 {isDarkMode && <FaSun size={50} onClick={toggleDarkMode} className='mt-1 ml-11 menui12 text-orange-500 cursor-pointer'/>}
                 <li className='hover:underline hover:text-white hover:underline-offset-8 cursor-pointer'><Link onClick={closehamburger} to="Home" smooth duration={1500}>Home</Link></li>

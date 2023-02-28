@@ -8,7 +8,7 @@ function GithubCal({isDarkMode}) {
 },[])
   return (
     <>
-    <div style={isDarkMode===true?{background:"#000006",color:"white"}:{backgroundColor:"#2874F0",color:"black"}} id='about' name="About" className='max-w-screen md:w-full flex justify-center items-center xl:p-20 p-auto mx-auto pt-10 pb-20 md:pt-28 github'>
+    <div style={isDarkMode===true?{background:"#000006",color:"white"}:{backgroundColor:"white",color:"black"}} id='about' name="About" className='max-w-screen md:w-full flex justify-center items-center xl:p-20 p-auto mx-auto pt-10 pb-20 md:pt-28 github'>
         <div>
         <p data-aos="fade-right" className="text-5xl text-center mb-10 hover:underline hover:text-blue-900 hover:underline-offset-8" >
             Github Calender
