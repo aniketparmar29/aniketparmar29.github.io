@@ -3,6 +3,7 @@ import emailjs from '@emailjs/browser';
 import {FaPhoneSquareAlt} from 'react-icons/fa'
 import {BsTelephone} from 'react-icons/bs'
 import {MdOutlineEmail,MdEmail} from 'react-icons/md'
+import {FaGithubSquare,FaGithub,FaLinkedin,FaLinkedinIn,FaFileDownload,FaDownload} from 'react-icons/fa';
 import {HiLocationMarker,HiOutlineLocationMarker} from 'react-icons/hi'
 import AOS from "aos";
 
@@ -54,8 +55,22 @@ const Contact = ({isDarkMode}) => {
         </div>
         <h3 className="text-xl mt-3">Lathidad,Gujarat</h3>
       </div>
+      <div className='mt-5 flex justify-around'>
+              <button>
+              <a href="https://github.com/aniketparmar29" target="_blank" rel="noopener noreferrer">
+                {isDarkMode && <FaGithubSquare size={50}/>}
+                {!isDarkMode && <FaGithub size={50}/>}
+                </a>
+              </button>
+              <button>
+                <a href="https://www.linkedin.com/in/aniket-parmar-a42597239/" target="_blank" rel="noopener noreferrer">
+              {isDarkMode && <FaLinkedin size={50}/>}
+              {!isDarkMode && <FaLinkedinIn size={50}/>}
+                </a>
+              </button>
+            </div>
     </div>
-  <form ref={form} data-aos="fade-right" className={`pb-12 h-[33rem] p-6 flex-col justify-center items-center w-[80%] ${isDarkMode===true?"border-white shadow-cyan-400":"border-blue-900 shadow-white"} border-4 m-auto rounded-lg shadow-lg`} onSubmit={sendEmail}>
+  <form ref={form} data-aos="fade-right" className={`pb-12 h-[37.5rem] p-6 flex-col justify-center items-center w-[85%] ${isDarkMode===true?"border-white shadow-cyan-400":"border-blue-900 shadow-white"} border-4 m-auto rounded-lg shadow-lg`} onSubmit={sendEmail}>
     <h1 className='text-center font-bold border-2 p-6 mb-10 text-xl rounded-xl hover:bg-white hover:text-black'>Contact Form</h1>
     <div className="mb-4">
       <label className="block  font-medium mb-2" htmfor="from_name">

@@ -12,6 +12,7 @@ import Resume from '../Download/Aniket-Parmar-Resume.pdf';
 import Contact from '../Components/Contact';
 import Project from '../Components/Project';
 import Footer from '../Components/Footer';
+import Tools from '../Components/Tools';
 function Home() {
 
   const [isDarkMode,toggleDarkMode]=useDarkMode();
@@ -83,6 +84,8 @@ function Home() {
         <About isDarkMode={isDarkMode}/>
     
         <Skills isDarkMode={isDarkMode}/>
+
+        <Tools isDarkMode={isDarkMode}/>
     
       <GithubCal isDarkMode={isDarkMode}/>
     <div style={isDarkMode===true?{backgroundColor:"rgb(8, 16, 28)",color:"white"}:{backgroundColor:"rgb(144, 175, 224)",color:"black"}} className=" xl:flex 2xl:flex lg:flex gap-20 justify-between">

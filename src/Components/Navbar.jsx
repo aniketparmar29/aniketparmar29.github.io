@@ -2,7 +2,7 @@ import React from 'react'
 import { useEffect } from 'react';
 import { FaMoon,FaSun } from "react-icons/fa";
 import { Link } from 'react-scroll';
-import Resume from '../Download/Aniket-Parmar-Resume.pdf';
+import Resume from '../Download/fp06_499-Aniket-Parmar-Resume.pdf';
 import dark from '../assets/logo/darklogo.png';
 import light from '../assets/logo/lightlogo.png'
 function Navbar({isDarkMode,toggleDarkMode}) {
