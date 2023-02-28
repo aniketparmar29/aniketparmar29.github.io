@@ -12,7 +12,7 @@ function Navbar({isDarkMode,toggleDarkMode}) {
               const fileURL = window.URL.createObjectURL(blob);
               let alink = document.createElement('a');
               alink.href = fileURL;
-              alink.download = "Aniket-Parmar-Resume.pdf";
+              alink.download = "fp06_499-Aniket-Parmar-Resume.pdf";
               alink.click();
           })
       })

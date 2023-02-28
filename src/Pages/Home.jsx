@@ -8,7 +8,7 @@ import {TypeAnimation} from 'react-type-animation'
 import {FaGithubSquare,FaGithub,FaLinkedin,FaLinkedinIn,FaFileDownload,FaDownload} from 'react-icons/fa';
 import {RiArrowUpCircleFill,RiArrowUpCircleLine} from 'react-icons/ri'
 import {Link} from 'react-scroll'
-import Resume from '../Download/Aniket-Parmar-Resume.pdf';
+import Resume from '../Download/fp06_499-Aniket-Parmar-Resume.pdf';
 import Contact from '../Components/Contact';
 import Project from '../Components/Project';
 import Footer from '../Components/Footer';
@@ -22,7 +22,7 @@ function Home() {
           const fileURL = window.URL.createObjectURL(blob);
           let alink = document.createElement('a');
           alink.href = fileURL;
-          alink.download = "Aniket-Parmar-Resume.pdf";
+          alink.download = "fp06_499-Aniket-Parmar-Resume.pdf";
           alink.click();
       })
   })
