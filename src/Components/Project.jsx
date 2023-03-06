@@ -184,12 +184,12 @@ let style_md = "mt-6 rounded-lg duration-200  h-52   md:h-60  sm:max-w-screen-lg
             </div>
             <div className="max-w-screen-md flex justify-center space-x-6">
             <div className="mt-4 sm:mt-6" >
-              <a href="https://github.com/aniketparmar29/Tatacliq-clone" target={"_blank"} rel='noreferrer'>
+              <a href="https://github.com/blackcode1996/Tata-Cliq-clone" target={"_blank"} rel='noreferrer'>
                 <button className="inline-block px-4 py-2 rounded-lg  hover:opacity-70 bg-gradient-to-r from-cyan-400 to-blue-500 cursor-pointershadow-lg uppercase tracking-wide font-semibold text-sm text-white sm:text-base" > Code</button>
               </a>
             </div>
             <div className="mt-4 sm:mt-6"  >
-              <a href="https://formalclick.netlify.app/" target={"_blank"} rel='noreferrer'>
+              <a href="https://tata-cliq-clone.vercel.app/" target={"_blank"} rel='noreferrer'>
                 <button className="inline-block px-4 py-2 rounded-lg hover:opacity-70 bg-gradient-to-r from-cyan-400 to-blue-500 cursor-pointer shadow-lg uppercase tracking-wide font-semibold text-sm text-white sm:text-base" >Demo</button>
               </a>
             </div>
@@ -197,7 +197,7 @@ let style_md = "mt-6 rounded-lg duration-200  h-52   md:h-60  sm:max-w-screen-lg
         </div>
 
       <div className="hidden relative lg:block piji"  >
-      <a href="https://formalclick.netlify.app/" target={"_blank"} rel='noreferrer'>
+      <a href="https://tata-cliq-clone.vercel.app/" target={"_blank"} rel='noreferrer'>
       <img className="imgji" src={c1} alt="logo" />
       </a>
         </div>
