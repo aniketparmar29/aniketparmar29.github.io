@@ -61,7 +61,7 @@ function Navbar({isDarkMode,toggleDarkMode}) {
                 <li className='font-bold text-lg hover:underline hover:text-blue-500hover:underline-offset-8 cursor-pointer'><Link to="Skills" smooth duration={250}>Skills</Link></li>
                 <li className='font-bold text-lg hover:underline hover:text-blue-500hover:underline-offset-8 cursor-pointer'><Link to="Projects" smooth duration={250}>Projects</Link></li>
                 <li className='font-bold text-lg hover:underline hover:text-blue-500hover:underline-offset-8 cursor-pointer'><Link to="Contact" smooth duration={250}>Contacts</Link></li>
-                <li  onClick={handleDownload} className='font-bold text-lg hover:underline hover:text-blue-500hover:underline-offset-8 cursor-pointer'><a href="https://drive.google.com/file/d/1LbPArwTFWUcw_OZZNMw0JCojAp1GcFa7/view?usp=share_link" rel='noreferrer' target={"_blank"}>Resume</a></li>
+                <li  onClick={handleDownload} className='font-bold text-lg hover:underline hover:text-blue-500hover:underline-offset-8 cursor-pointer'><a href="https://drive.google.com/file/d/1ycVAbWg7YSO4c8xk50Vpzj3J_oOM0XpZ/view?usp=share_link" rel='noreferrer' target={"_blank"}>Resume</a></li>
                 {!isDarkMode && <FaMoon size={25} onClick={toggleDarkMode} className='mt-1 cursor-pointer'/>}
                 {isDarkMode && <FaSun size={25} onClick={toggleDarkMode} className='mt-1 cursor-pointer text-orange-500 '/>}
             </ul>
@@ -77,7 +77,7 @@ function Navbar({isDarkMode,toggleDarkMode}) {
                 <li className='hover:underline hover:text-blue-500hover:underline-offset-8 cursor-pointer'><Link onClick={closehamburger} to="Skills" smooth duration={250}>Skills</Link></li>
                 <li className='hover:underline hover:text-blue-500hover:underline-offset-8 cursor-pointer'><Link onClick={closehamburger} to="Projects" smooth duration={250}>Projects</Link></li>
                 <li className='hover:underline hover:text-blue-500hover:underline-offset-8 cursor-pointer'><Link onClick={closehamburger} to='Contact' smooth duration={250} >Contact</Link></li>
-                <li onClick={handleDownload} className='hover:underline hover:text-blue-500hover:underline-offset-8 cursor-pointer'><a href="https://drive.google.com/file/d/1LbPArwTFWUcw_OZZNMw0JCojAp1GcFa7/view?usp=share_link" rel='noreferrer' target={"_blank"}>Resume</a></li>
+                <li onClick={handleDownload} className='hover:underline hover:text-blue-500hover:underline-offset-8 cursor-pointer'><a href="https://drive.google.com/file/d/1ycVAbWg7YSO4c8xk50Vpzj3J_oOM0XpZ/view?usp=share_link" rel='noreferrer' target={"_blank"}>Resume</a></li>
 
             </ul>
     </div>

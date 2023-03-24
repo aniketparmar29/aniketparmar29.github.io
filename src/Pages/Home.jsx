@@ -64,7 +64,7 @@ function Home() {
               {!isDarkMode && <FaLinkedinIn size={50}/>}
                 </a>
               </button>
-              <a href="https://drive.google.com/file/d/1LbPArwTFWUcw_OZZNMw0JCojAp1GcFa7/view?usp=share_link" rel='noreferrer' target={"_blank"}>
+              <a href="https://drive.google.com/file/d/1ycVAbWg7YSO4c8xk50Vpzj3J_oOM0XpZ/view?usp=share_link" rel='noreferrer' target={"_blank"}>
               <button onClick={handleDownload} className='flex-col mt-2 justify-center items-center'>
                 <div>
               {isDarkMode && <FaFileDownload size={50}/>}
