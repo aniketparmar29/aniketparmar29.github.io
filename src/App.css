@@ -59,7 +59,7 @@ body {
 }
 .imgji {
     width: 100%;
-    transition: all 15s ease;
+    transition: all 20s ease;
 }
 
 .piji:hover .imgji {

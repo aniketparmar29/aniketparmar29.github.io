@@ -1,10 +1,10 @@
 import AOS from "aos";
 import "aos/dist/aos.css"
 import { useEffect } from "react";
-import a1 from '../assets/project/sephora/home.png'
-import a2 from '../assets/project/sephora/section.png'
-import a3 from '../assets/project/sephora/Payment.png'
-import a4 from '../assets/project/sephora/singin.png'
+import a2 from '../assets/project/hathibrand/index.jpg'
+import a1 from '../assets/project/hathibrand/home.png'
+import a3 from '../assets/project/hathibrand/Admin.png'
+import a4 from '../assets/project/hathibrand/checkout.png'
 import b1 from '../assets/project/skinstore/home.png'
 import b2 from '../assets/project/skinstore/section.png'
 import b3 from '../assets/project/skinstore/payment.png'
@@ -17,15 +17,15 @@ import d1 from '../assets/project/mycodingai/home.png'
 import d2 from '../assets/project/mycodingai/resposive.png'
 import d3 from '../assets/project/mycodingai/serach.png'
 import ImageSlider from "./ImageSlider";
-import {SiCss3, SiHtml5, SiJavascript, SiReact, SiRedux,SiExpress,SiNodedotjs} from "react-icons/si";
+import {SiCss3, SiHtml5, SiJavascript, SiReact, SiRedux,SiExpress,SiNodedotjs, SiMysql, SiTailwindcss, SiChakraui} from "react-icons/si";
 const Project = ({isDarkMode}) => {
   useEffect(()=>{
     AOS.init({delay:1});
 },[])
-const sephora = [
+const hathibrannd = [
   {
     id: 2,
-    src: a2,
+    src: a1,
   },
   {
     id: 3,
@@ -86,6 +86,49 @@ let style_md = "mt-6 rounded-lg duration-200  h-52   md:h-60  sm:max-w-screen-lg
             Projects
           </p>
         </div>
+        {/* hathibrand pro */}
+        <div style={isDarkMode===true?{backgroundColor:"#ff7474",color:"white"}:{backgroundColor:"#C0EEF2",color:"black"}} className={`lg:max-w-screen-lg w-[80%] z-1 m-20  mx-auto px-2 shadow-lg ${isDarkMode===true?"shadow-cyan-400":"shadow-white"} mt-0 md:mt-10 `}>
+        <div className="max-w-screen-lg mx-auto grid lg:grid-cols-2  "> 
+        <div className='lg:p-12 p-5 max-w-md mx-auto sm:max-w-xl lg:px-10 lg:py-6 lg:max-w-full'>
+          <div className="block lg:hidden">
+          <ImageSlider  data={hathibrannd} imgStyle= {style_md} />
+          </div>
+          <h1 className="mt-6 text-xl text-blue-500 font-bold sm:mt-8  sm:text-3xl lg:text-2xl" >Hathibrand
+            </h1>
+            <p className="w-full  mt-2  sm:mt-2 sm:text-xl"  >
+            Hathibrand is source for premium quality incense sticks & Cosmetics. Shop our extensive selection of fragrances and enjoy.
+            </p>
+            <div className='flex justify-center items-center gap-x-2 mt-5'  >
+            <div><SiReact size="32px" color="#61DBFB" className="hover:animate-spin hover:cursor-pointer"/></div>
+            <div><SiRedux size="32px" color="#764abc" className="hover:animate-spin hover:cursor-pointer"/></div>
+            <div><SiJavascript size="32px" color="yellow" className="hover:animate-bounce hover:cursor-pointer"/></div>
+            <div><SiChakraui size="32px" color="cyan" className="hover:animate-bounce hover:cursor-pointer"/></div>
+            <div><SiNodedotjs size="32px" color="green" className="hover:animate-bounce hover:cursor-pointer"/></div>
+            <div><SiMysql size="32px" color="blue" className="hover:animate-bounce hover:cursor-pointer"/></div>
+            <div><SiTailwindcss size="32px" color="cyan" className="hover:animate-bounce hover:cursor-pointer"/></div>
+            </div>
+            <div className="max-w-screen-md flex justify-center space-x-6" >
+            <div className="mt-4 sm:mt-6">
+              <a href="https://github.com/aniketparmar29/hathibrand" target={"_blank"} rel='noreferrer'>
+                <button className="inline-block px-4 py-2 rounded-lg  hover:opacity-70 bg-gradient-to-r from-cyan-400 to-blue-500 cursor-pointershadow-lg uppercase tracking-wide font-semibold text-sm text-white sm:text-base" > Code</button>
+              </a>
+            </div>
+            <div className="mt-4 sm:mt-6" >
+              <a href="https://hathibrand.in/" target={"_blank"} rel='noreferrer'>
+                <button className="inline-block px-4 py-2 rounded-lg hover:opacity-70 bg-gradient-to-r from-cyan-400 to-blue-500 cursor-pointer shadow-lg uppercase tracking-wide font-semibold text-sm text-white sm:text-base" >Demo</button>
+              </a>
+            </div>
+            </div>
+        </div>
+
+      <div className="hidden relative lg:block piji "  >
+        <a href="https://hathibrand.in/" target={"_blank"} rel='noreferrer'> 
+      <img className="imgji " src={a2} alt="logo" />
+        </a>
+        </div>
+      </div>
+      </div>
+        {/* skinstore pro */}
         <div style={isDarkMode===true?{backgroundColor:"#ff7474",color:"white"}:{backgroundColor:"#C0EEF2",color:"black"}} className={`lg:max-w-screen-lg w-[80%] z-1 m-20  mx-auto px-2 shadow-lg ${isDarkMode===true?"shadow-cyan-400":"shadow-white"} mt-0 md:mt-10 `}>
         <div className="max-w-screen-lg mx-auto grid lg:grid-cols-2  "> 
         <div className='lg:p-12 p-5 max-w-md mx-auto sm:max-w-xl lg:px-10 lg:py-6 lg:max-w-full'>
