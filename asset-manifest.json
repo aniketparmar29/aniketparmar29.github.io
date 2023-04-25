@@ -1,18 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.9f019df9.css",
-    "main.js": "/static/js/main.c96d68e3.js",
+    "main.css": "/static/css/main.c65a071e.css",
+    "main.js": "/static/js/main.b8cc4446.js",
     "static/js/787.3706780e.chunk.js": "/static/js/787.3706780e.chunk.js",
     "static/media/home.png": "/static/media/home.aa3fc2a1480185c0b131.png",
-    "static/media/singin.png": "/static/media/singin.be3d1391574dda7dbb77.png",
+    "static/media/index.jpg": "/static/media/index.ef4434eba4de465c8f45.jpg",
     "static/media/section.png": "/static/media/section.617f91cd56f2bb144f1e.png",
-    "static/media/Payment.png": "/static/media/Payment.0eaee7b5650769912ed4.png",
     "static/media/admin.png": "/static/media/admin.4a03dcb3a1894d66ccff.png",
     "static/media/Aniket-Parmar-Resume.pdf": "/static/media/Aniket-Parmar-Resume.864f9e95424cac4b92f7.pdf",
     "static/media/redux.png": "/static/media/redux.1b4bb5fceb01b19da59d.png",
     "static/media/chakra.png": "/static/media/chakra.e4cb472ccaabf22affba.png",
     "static/media/wishlist.png": "/static/media/wishlist.ae5378f08d479c9f71d3.png",
     "static/media/payment.png": "/static/media/payment.89dabd76f1e62514cb96.png",
+    "static/media/checkout.png": "/static/media/checkout.c0f4178064683b7527ff.png",
+    "static/media/singin.png": "/static/media/singin.be3d1391574dda7dbb77.png",
+    "static/media/Admin.png": "/static/media/Admin.db80f71c8c6cc25cbcd6.png",
     "static/media/resposive.png": "/static/media/resposive.77597326c540234db923.png",
     "static/media/lightlogo.png": "/static/media/lightlogo.e3a9ffa270cce6c97239.png",
     "static/media/react.png": "/static/media/react.0cf951a69d8e58f83f9d.png",
@@ -27,12 +29,12 @@
     "static/media/css.png": "/static/media/css.69a82c2d9e45c933a9cb.png",
     "static/media/javascript.png": "/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/index.html",
-    "main.9f019df9.css.map": "/static/css/main.9f019df9.css.map",
-    "main.c96d68e3.js.map": "/static/js/main.c96d68e3.js.map",
+    "main.c65a071e.css.map": "/static/css/main.c65a071e.css.map",
+    "main.b8cc4446.js.map": "/static/js/main.b8cc4446.js.map",
     "787.3706780e.chunk.js.map": "/static/js/787.3706780e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9f019df9.css",
-    "static/js/main.c96d68e3.js"
+    "static/css/main.c65a071e.css",
+    "static/js/main.b8cc4446.js"
   ]
 }
