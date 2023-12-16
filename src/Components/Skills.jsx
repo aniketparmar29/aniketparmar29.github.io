@@ -12,6 +12,10 @@ import node from "../assets/node.png";
 import mongodb from "../assets/mongodb.png";
 import express from "../assets/express.png";
 import chakra from "../assets/chakra.png";
+import php from "../assets/php.png";
+import bootstrap from "../assets/bootstrap.png";
+import jquery from "../assets/jquery.png";
+import mysql from "../assets/mysql.png";
 const Skills = ({isDarkMode}) => {
   useEffect(()=>{
     AOS.init({delay:200});
@@ -77,6 +81,26 @@ const Skills = ({isDarkMode}) => {
       id: 12,
       src: mongodb,
       title: "Mongodb",
+    },
+    {
+      id: 13,
+      src: php,
+      title: "PHP",
+    },
+    {
+      id: 14,
+      src: mysql,
+      title: "MySql",
+    },
+    {
+      id: 15,
+      src: jquery,
+      title: "JQuery",
+    },
+    {
+      id: 16,
+      src: bootstrap,
+      title: "Bootstrap",
     },
    
   ];
